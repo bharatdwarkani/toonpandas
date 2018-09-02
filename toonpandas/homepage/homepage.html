@@ -3,13 +3,11 @@
 <head>
     <link rel="stylesheet" type="text/css" href="homepagefilesss.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.10/css/perfect-scrollbar.min.css">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.10/js/perfect-scrollbar.jquery.js  "></script>
- 
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js"></script> 
+    
     <style>
         @import url(https://fonts.googleapis.com/css?family=Lato:400,300,900,700);
 
@@ -17,9 +15,9 @@
             font-size: 16px;
         }
 
-        body {
+        /*body {
             cursor: url(arrow.cur), default;
-        }
+        }*/
 
         h3 {
             font-family: 'Lato', sans-serif;
@@ -126,7 +124,7 @@
         }
 
         body {
-            cursor: url(Mac.cur), default;
+            /*cursor: url(Mac.cur), default;*/
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -473,12 +471,16 @@
             border: 1px solid black;
         }
 
-        #reaction-content-area {
-            width: 500px;
+        
+
+        
+        /*#reaction-content-area {
+            width: 400px;
             height: 400px; 
+            padding:5px;
             position: relative;
             overflow: auto;
-        }
+        }*/
     </style>
 
 
@@ -560,6 +562,7 @@
         </div>
         <div class="col-lg-6" style="margin-top:15px">
             <div>
+                <div style="font-size:25px"><b>THE STARTUP VIDEO</b></div>
                 <iframe width="560" height="260" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
             <div>
@@ -576,21 +579,34 @@
             </div>
         </div>
         <div class="col-lg-6" style="margin-top:15px">
-            <div id="reaction-content-area">
+            <div id="reaction-content-area" style="cursor:pointer">
                 <b>REACTIONS</b>
-                <div>REACTIONS</div>
-                <div>REACTIONS</div>
-                <div>REACTIONS</div>
-                <div>REACTIONS</div>
-                <div>REACTIONS</div>
-                <div>REACTIONS</div>
-                <div>REACTIONS</div>
-                <div>REACTIONS</div>
-                <div>REACTIONS</div>
-                <div>REACTIONS</div>
-                <div>REACTIONS</div>
-                <div>REACTIONS</div>
-            </div>
+                <p style="margin-right:15px">
+                    Absolutely nothing else can be so blunt &amp; direct.
+                    <br>time for both investors &amp; wannable Startups t0 look within and decide. You don't become a CEO overnight just because you decided to be a startup.
+                    <br>People look at the success stories of Flipkart but no one seems to be seen standing outside a book store to distribute book marks the way Bansals of FK did.
+                    <br> I totally support the statement made by Anil Chhikara, you are not a CEO if your company is not making revenues.
+                    <br><span style="color:gray;float:right">-Akash Agarwal, Owner Emerecard</span>
+                    <br>
+                    <br>Preamble of start-up comapny... explained !!!
+                    <br>Excellent work Team ToonPandas.
+                    <br><span style="color:gray;float:right">-Gaurav Ranebennur,</span>
+                    <br><span style="color:gray;float:right">Founder &amp; CEO, E Lorre</span>
+                    <br>
+                    <br>"Well said...It's not about making millions. It's about the mindset...Kudos to the tremendous job that you all are doing in providing the great ecosystem to the startups"
+                    <br><span style="color:gray;float:right">-Nidhi Gupta, California</span>
+                    <br>
+                    <br>For all the start-ups enthisiasts out there, if you wanna start, do it after you watch this video... #TheStartupVideo, #ToonPandas...Inspiring video, Nice work bro Harsha Bandaru
+                    <br><span style="color:gray;float:right">-Roehan Rangadurai, MICA</span>
+                    <br><span style="color:gray;float:right">International Photographer</span>
+                    <br>
+                    <br>Short and insightful.. good work Harsha &amp; Team ToonPandas
+                    <br><span style="color:gray;float:right">-Sudha Datta, IIM Rohtak</span>
+                    <br><span style="color:gray;float:right">Coal India Limited</span>  
+                    <br>
+                    <br>"Starting Up is not just about the Millions, It's the Mindset!" Well Said..
+                    <br><span style="color:red;float:right">-NSRCEL, IIM Bangalore</span> 
+</div>
     </div>
 </div>
 
@@ -804,8 +820,16 @@
                 }
             }
 
-            $('#reaction-content-area').perfectScrollbar();
+           // $('#reaction-content-area').perfectScrollbar();
 
+            $(function () {
+                $('#reaction-content-area').slimScroll({
+                    height: '400px',
+                    width: '500px',
+                    railVisible: true,
+                    alwaysVisible: true
+                });
+            });
            
         </script>
 </body>
