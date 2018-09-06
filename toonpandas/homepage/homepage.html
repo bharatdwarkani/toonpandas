@@ -6,7 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js"></script> 
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js"></script>
 
     <style>
         @import url(https://fonts.googleapis.com/css?family=Lato:400,300,900,700);
@@ -54,6 +54,7 @@
 
         .carousel-inner {
             a
+
         {
             display: table-cell;
             height: 130px;
@@ -140,268 +141,197 @@
 
     <title>ToonPandas</title>
 </head>
-<body class="">
 
-    <div class="topnav" style="text-align: center;" class="col-lg-12 hidden-sm hidden-md">
-        <div class="col-lg-12 hidden-sm hidden-md" style="margin-top: 10px;margin-bottom: 10px;">
+<body class="hidden-sm hidden-xs" style="position: relative; ">
 
-            <a style="text-decoration: none;">
+    <div class="hidden-sm hidden-md" id="loading" >
+        <div class="hidden-sm hidden-md col-xs-12" >
 
-                <IMG class="static aboout" SRC="menu/about.jpg" id="aboutimage" style="height: 75px;width: 75px;padding: 0px;margin: 10px" onclick="myFunctionhomess()">
-
-                <IMG class="active" SRC="menu/about-hover.jpg" style="height: 75px;width: 75px;padding: 0px;margin: 10px" onclick="myFunctionhomess()">
-
-            </a>`
-
-
-
-
-            <a style="text-decoration: none">
-                <IMG class="static" SRC="menu/portfolio.jpg" id="portimage" style="height: 75px;width: 75px;padding: 0px;margin: 10px" onclick="myFunctionportfolio()">
-
-                <IMG class="active" SRC="menu/portfolio-hover.jpg" style="height: 75px;width: 75px;padding: 0px;margin: 10px" onclick="myFunctionportfolio()">
-
-            </a>
-
-
-
-            <a style="text-decoration: none">
-                <IMG class="static" SRC="menu/services.jpg" id="servicepage" style="height: 75px;padding: 0px;margin: 10px" onclick="myFunctionservices()">
-
-                <IMG class="active" SRC="menu/services-hover.jpg" style="height: 75px;padding: 0px;margin: 10px" onclick="myFunctionservices()">
-
-            </a>
-
-
-
-
-            <a class="active " href="#home" style="text-decoration: none">
-                <IMG class="animated  fadeInUp " SRC="iconss/panda.jpg" style="height: 110px;width: 110px;padding: 0px;margin: 10px" onclick="myFunctionhome()">
-
-            </a>
-
-
-            <a style="text-decoration: none">
-                <IMG class="static" SRC="menu/team.jpg" style="height: 75px;width: 75px;padding: 0px;margin: 10px" onclick="teamClick()">
-
-                <IMG class="active" SRC="menu/team-hover-.jpg" style="height: 75px;width: 75px;padding: 0px;margin: 10px" onclick="teamClick()">
-
-            </a>
-
-
-
-            <a style="text-decoration: none">
-                <IMG class="static" SRC="menu/lab.jpg" style="height: 75px;width: 75px;padding: 0px;margin: 10px" onclick="labClick()">
-
-                <IMG class="active" SRC="menu/lab-hover.jpg" style="height: 75px;width: 75px;padding: 0px;margin: 10px" onclick="labClick()">
-
-            </a>
-
-            <a style="text-decoration: none">
-                <IMG class="static" SRC="menu/contact.jpg" style="height: 75px;width: 75px;padding: 0px;margin: 10px" onclick="contactClick()">
-
-                <IMG class="active" SRC="menu/contact-hover.jpg" style="height: 75px;width: 75px;padding: 0px;margin: 10px" onclick="contactClick()">
-
-            </a>
-
-
-
-
-
-        </div>
-
-        <div id="homepage" style="animation-delay: 1s;" class="col-lg-12  hidden-sm hidden-md animated  fadeInDown   ">
-
-            <div class="col-lg-12  hidden-sm hidden-md  " style="margin-top: 30px;font-size: 30px;">
-                FRESH PIXELS MADE DAILY,<font color="#00BFA5"> THE BEST WAY.</font>
-            </div>
-            <div class="col-lg-12  hidden-sm hidden-md  " style="margin-top: 30px;font-size: 17px;">
-                ToonPandas is a digital media production house in Bangalore.
-            </div>
-            <div class="col-lg-12  hidden-sm hidden-md  " style="margin-top: 0px;font-size: 17px;">
-                We specialize in creating simple,fun intutive design & video content.
-            </div>
-            <div class="col-lg-12  hidden-sm hidden-md  " style="margin-top: 60px;font-size: 17px;">
-                WE RENDER OUR SERVICES TO THE ELITE OF THE ELITES.
-            </div>
-        </div>
-
-
-
-
-        <div id="homepagebase" style="animation-delay: 1s;" class="col-lg-12  hidden-sm hidden-md animated  fadeIn  ">
-
-            <div class="col-md-10 col-md-offset-1" style="margin-top: 30px;" style="animation-delay: 4s;">
-                <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="2000" id="myCarousel">
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <div class="col-md-2 col-sm-6 col-xs-12">
-                                <a href="#">
-                                    <img src="https://drive.google.com/uc?id=1RRDeByf6Pt5OJHxcdPaO_ZIgH4XxbOpZ" onclick="alert('S');" style="width: 80px;height: 80px;" class="img-responsive">
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1TcDCWg7jFAbvA12aVVrNU5XEIvgt2vMA" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
-                        `
-                        </div>
-
-                        <div class="item">
-                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1435vG1h9xEsGJmVtnH1VYnAKu-zO_W6W" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
-                        </div>
-
-                        <div class="item">
-                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1Xb6qTSAe5Kz4OQG2GyuAYlDBt-Lz8AOj" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
-                        </div>
-
-                        <div class="item">
-                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1CNjJM7iKT7PvpDnfm_VbgRZFt7rvQnbA" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
-                        </div>
-
-
-
-                        <div class="item">
-                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1B8oFbpJvFAFmWqAhOaI-QbzLaqW_t_2J" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
-                        </div>
-
-
-                        <div class="item">
-                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1AR4elICQtSaQXbhF0AU0A3EAKaiZYAmR" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1j4E78i-ZRRQgnAQ7fskG88mZEHh6iRyR" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1hXYASbJZX1L1LceIWDylHRCte3a7BRdT" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1bEktTEiqC_yPW__FO0mMz3VOf1aB2Ggi" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1r4C1S-ee3zCOyFIXHZbDGuPzkaADtaMW" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1EpuakI9vRrZnHzcPQFFJE4w3VjImoqx8" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1EjUPdEHQRK3ePfVz954_2YfuIe-S8RH3" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1Xmqb0fZcBpGqyyHSMTsI5QRjj6pnQUXr" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
-                        </div>
-
-
-
-                        <div class="item">
-                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1qCPkq-fQoyUtJtpKFIEsZK34TYJzaegP" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1sb3lOHZCivf4lO4YA_URlDRtDn2Ej-LO" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1gSBApFlmFdPZgfAAS0jZOgEfmMphKKtk" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1Ug6pVDMQH3HDMI73EfbvYXnOS9MPKcrz" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1oBJJKk-2nPAJAYIV0HQtZvj7yKlSACjF" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1QpKQUCtl1RkoFhi1gGCSGb_C7-XavrEE" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1q0-fuuDifD0V2qX8iUzF52ykol2zHEu3" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
-                        </div>
-
-                        <div class="item">
-                            <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1g3umZNj6Y3rgyBND4Z6WNDZLt6oh9XA8" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
-                        </div>
-                    </div>
-                    <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                    <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
-                </div>
-            </div>
+            <IMG id="pandaloader" style="position: absolute;" SRC="images/toon.gif" style="width: 100%;padding: 0px;margin: 0px" onclick="myFunction()">
+            </IMG>
+            
         </div>
     </div>
+    <div id="bodydiv"  >
+        <div class="topnav" style="text-align: center;" class="col-lg-12 hidden-sm hidden-md">
+            <div class="col-lg-12 hidden-sm hidden-md" style="margin-top: 10px;margin-bottom: 10px;">
+
+                <a style="text-decoration: none;">
+
+                    <IMG class="static aboout" SRC="menu/about.jpg" id="aboutimage" style="height: 75px;width: 75px;padding: 0px;margin: 10px" onclick="myFunctionhomess()">
+
+                    <IMG class="active" SRC="menu/about-hover.jpg" style="height: 75px;width: 75px;padding: 0px;margin: 10px" onclick="myFunctionhomess()">
+
+                </a>`
+
+
+
+
+                <a style="text-decoration: none">
+                    <IMG class="static" SRC="menu/portfolio.jpg" id="portimage" style="height: 75px;width: 75px;padding: 0px;margin: 10px" onclick="myFunctionportfolio()">
+
+                    <IMG class="active" SRC="menu/portfolio-hover.jpg" style="height: 75px;width: 75px;padding: 0px;margin: 10px" onclick="myFunctionportfolio()">
+
+                </a>
+
+
+
+                <a style="text-decoration: none">
+                    <IMG class="static" SRC="menu/services.jpg" id="servicepage" style="height: 75px;padding: 0px;margin: 10px" onclick="myFunctionservices()">
+
+                    <IMG class="active" SRC="menu/services-hover.jpg" style="height: 75px;padding: 0px;margin: 10px" onclick="myFunctionservices()">
+
+                </a>
+
+
+
+
+                <a class="active " href="#home" style="text-decoration: none">
+                    <IMG class="animated  fadeInUp " SRC="iconss/panda.jpg" style="height: 110px;width: 110px;padding: 0px;margin: 10px" onclick="myFunctionhome()">
+                </a>
+
+
+                <a style="text-decoration: none">
+                    <IMG class="static" SRC="menu/team.jpg" id="teampage" style="height: 75px;width: 75px;padding: 0px;margin: 10px" onclick="teamClick()">
+
+                    <IMG class="active" SRC="menu/team-hover-.jpg" style="height: 75px;width: 75px;padding: 0px;margin: 10px" onclick="teamClick()">
+
+                </a>
+
+
+
+                <a style="text-decoration: none">
+                    <IMG class="static" SRC="menu/lab.jpg" id="labpage" style="height: 75px;width: 75px;padding: 0px;margin: 10px" onclick="labClick()">
+
+                    <IMG class="active" SRC="menu/lab-hover.jpg" style="height: 75px;width: 75px;padding: 0px;margin: 10px" onclick="labClick()">
+
+                </a>
+
+                <a style="text-decoration: none">
+                    <IMG class="static" SRC="menu/contact.jpg" id="contactpage" style="height: 75px;width: 75px;padding: 0px;margin: 10px" onclick="contactClick()">
+
+                    <IMG class="active" SRC="menu/contact-hover.jpg" style="height: 75px;width: 75px;padding: 0px;margin: 10px" onclick="contactClick()">
+
+                </a>
 
 
 
 
 
-    <div id="protfolio" class="">
-        <div class="col-lg-12  hidden-sm hidden-md  " style="margin-top: 5px;font-size: 15px;text-align: center;">
-            <font color="#00BFA5">HAVE A LOOK AT WHAT WE DO.</font>
-        </div>
-        <div class="col-lg-12  hidden-sm hidden-md  " style="margin-top: 5px;font-size: 15px;text-align: center;">
-            <a style="text-decoration: none;color: #000000">2D Animation  &nbsp;&nbsp;&nbsp; |</a>
-            <a style="text-decoration: none;color: #000000">&nbsp;&nbsp;&nbsp;3D Animation&nbsp;&nbsp;&nbsp;|</a>
-            <a style="text-decoration: none;color: #000000">&nbsp;&nbsp;&nbsp;Live Action &nbsp;&nbsp;&nbsp;    |</a>
-            <a style="text-decoration: none;color: #000000">&nbsp;&nbsp;&nbsp;Branding&nbsp;&nbsp;&nbsp; |</a>
-            <a style="text-decoration: none;color: #000000">&nbsp;&nbsp;&nbsp;UI & UX&nbsp;&nbsp;&nbsp; |</a>
-            <a style="text-decoration: none;color: #000000">&nbsp;&nbsp;&nbsp;WEB </a>
-        </div>
-        <div class="col-xs-12">
-            <div class="col-md-10 col-md-offset-1" style="margin-top: 30px;" style="animation-delay: 4s;">
-                <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="2000" id="myCarousel">
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <div class="col-md-2 col-sm-6 col-xs-12">
-                                <a href="#">
-                                    <div style="padding:10px">
-                                        <iframe width="130" height="130" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                    </div>
-                                    <div style="padding:10px">
-                                        <iframe width="130" height="130" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                    </div>
-                                </a>
+            </div>
+
+            <div id="homepage" style="animation-delay: 1s;" class="col-lg-12  hidden-sm hidden-md animated  fadeInDown   ">
+
+                <div class="col-lg-12  hidden-sm hidden-md  " style="margin-top: 30px;font-size: 30px;">
+                    FRESH PIXELS MADE DAILY,<font color="#00BFA5"> THE BEST WAY.</font>
+                </div>
+                <div class="col-lg-12  hidden-sm hidden-md  " style="margin-top: 30px;font-size: 17px;">
+                    ToonPandas is a digital media production house in Bangalore.
+                </div>
+                <div class="col-lg-12  hidden-sm hidden-md  " style="margin-top: 0px;font-size: 17px;">
+                    We specialize in creating simple,fun intutive design & video content.
+                </div>
+                <div class="col-lg-12  hidden-sm hidden-md  " style="margin-top: 60px;font-size: 17px;">
+                    WE RENDER OUR SERVICES TO THE ELITE OF THE ELITES.
+                </div>
+            </div>
+
+
+
+
+            <div id="homepagebase" style="animation-delay: 1s;" class="col-lg-12  hidden-sm hidden-md animated  fadeIn  ">
+
+                <div class="col-md-10 col-md-offset-1" style="margin-top: 30px;" style="animation-delay: 4s;">
+                    <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="2000" id="myCarousel">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <img src="https://drive.google.com/uc?id=1RRDeByf6Pt5OJHxcdPaO_ZIgH4XxbOpZ" onclick="alert('S');" style="width: 80px;height: 80px;" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1TcDCWg7jFAbvA12aVVrNU5XEIvgt2vMA" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
+                                
+                            </div>
+
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1435vG1h9xEsGJmVtnH1VYnAKu-zO_W6W" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
+                            </div>
+
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1Xb6qTSAe5Kz4OQG2GyuAYlDBt-Lz8AOj" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
+                            </div>
+
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1CNjJM7iKT7PvpDnfm_VbgRZFt7rvQnbA" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
+                            </div>
+
+
+
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1B8oFbpJvFAFmWqAhOaI-QbzLaqW_t_2J" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
+                            </div>
+
+
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1AR4elICQtSaQXbhF0AU0A3EAKaiZYAmR" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1j4E78i-ZRRQgnAQ7fskG88mZEHh6iRyR" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1hXYASbJZX1L1LceIWDylHRCte3a7BRdT" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1bEktTEiqC_yPW__FO0mMz3VOf1aB2Ggi" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1r4C1S-ee3zCOyFIXHZbDGuPzkaADtaMW" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1EpuakI9vRrZnHzcPQFFJE4w3VjImoqx8" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1EjUPdEHQRK3ePfVz954_2YfuIe-S8RH3" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1Xmqb0fZcBpGqyyHSMTsI5QRjj6pnQUXr" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
+                            </div>
+
+
+
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1qCPkq-fQoyUtJtpKFIEsZK34TYJzaegP" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1sb3lOHZCivf4lO4YA_URlDRtDn2Ej-LO" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1gSBApFlmFdPZgfAAS0jZOgEfmMphKKtk" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1Ug6pVDMQH3HDMI73EfbvYXnOS9MPKcrz" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1oBJJKk-2nPAJAYIV0HQtZvj7yKlSACjF" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1QpKQUCtl1RkoFhi1gGCSGb_C7-XavrEE" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1q0-fuuDifD0V2qX8iUzF52ykol2zHEu3" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
+                            </div>
+
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1g3umZNj6Y3rgyBND4Z6WNDZLt6oh9XA8" style="width: 80px;height: 80px;" class="img-responsive"></a></div>
                             </div>
                         </div>
-
-
-
-
-
-                        <div class="item">
-                            <div class="col-md-2 col-sm-6 col-xs-12">
-                                <a href="#">
-                                    <div style="padding:10px">
-                                        <iframe width="130" height="130" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                    </div>
-                                    <div style="padding:10px">
-                                        <iframe width="130" height="130" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-2 col-sm-6 col-xs-12">
-                                <a href="#">
-                                    <div style="padding:10px">
-                                        <iframe width="130" height="130" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                    </div>
-                                    <div style="padding:10px">
-                                        <iframe width="130" height="130" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-2 col-sm-6 col-xs-12">
-                                <a href="#">
-                                    <div style="padding:10px">
-                                        <iframe width="130" height="130" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                    </div>
-                                    <div style="padding:10px">
-                                        <iframe width="130" height="130" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
                     </div>
-                    <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                    <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
                 </div>
             </div>
         </div>
@@ -409,287 +339,387 @@
 
 
 
-    </div>
+
+        <div id="protfolio" class="">
+            <div class="col-lg-12  hidden-sm hidden-md  " style="margin-top: 5px;font-size: 15px;text-align: center;">
+                <font color="#00BFA5">HAVE A LOOK AT WHAT WE DO.</font>
+            </div>
+            <div class="col-lg-12  hidden-sm hidden-md  " style="margin-top: 5px;font-size: 15px;text-align: center;">
+                <a style="text-decoration: none;color: #000000">2D Animation  &nbsp;&nbsp;&nbsp; |</a>
+                <a style="text-decoration: none;color: #000000">&nbsp;&nbsp;&nbsp;3D Animation&nbsp;&nbsp;&nbsp;|</a>
+                <a style="text-decoration: none;color: #000000">&nbsp;&nbsp;&nbsp;Live Action &nbsp;&nbsp;&nbsp;    |</a>
+                <a style="text-decoration: none;color: #000000">&nbsp;&nbsp;&nbsp;Branding&nbsp;&nbsp;&nbsp; |</a>
+                <a style="text-decoration: none;color: #000000">&nbsp;&nbsp;&nbsp;UI & UX&nbsp;&nbsp;&nbsp; |</a>
+                <a style="text-decoration: none;color: #000000">&nbsp;&nbsp;&nbsp;WEB </a>
+            </div>
+            <div class="col-xs-12">
+                <div class="col-md-10 col-md-offset-1" style="margin-top: 30px;" style="animation-delay: 4s;">
+                    <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="2000" id="myCarousel">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <div style="padding:10px">
+                                            <iframe width="130" height="130" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                        </div>
+                                        <div style="padding:10px">
+                                            <iframe width="130" height="130" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
 
 
 
-    <div id="services" class="col-lg-12  hidden-sm hidden-md  ">
-        <div class="col-lg-12  hidden-sm hidden-md fadeInRight animated " style="margin-top: 2px;font-size: 15px;text-align: center;">
-            <font color="#00BFA5"><b>OUR INCREDIBLE SERVICES</b></font>
+
+
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <div style="padding:10px">
+                                            <iframe width="130" height="130" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                        </div>
+                                        <div style="padding:10px">
+                                            <iframe width="130" height="130" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <div style="padding:10px">
+                                            <iframe width="130" height="130" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                        </div>
+                                        <div style="padding:10px">
+                                            <iframe width="130" height="130" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <div style="padding:10px">
+                                            <iframe width="130" height="130" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                        </div>
+                                        <div style="padding:10px">
+                                            <iframe width="130" height="130" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
         </div>
-        <style type="text/css">
-            .center {
+
+
+
+        <div id="services" class="col-lg-12  hidden-sm hidden-md  ">
+            <div class="col-lg-12  hidden-sm hidden-md fadeInRight animated " style="margin-top: 2px;font-size: 15px;text-align: center;">
+                <font color="#00BFA5"><b>OUR INCREDIBLE SERVICES</b></font>
+            </div>
+            <style type="text/css">
+                .center {
+                    margin: auto;
+                    border: 3px solid black;
+                    padding: 10px;
+                }
+            </style>
+
+            <div class="table-responsive   " style="margin-top: 35px;text-align: center;">
+                <table class="center  animated fadeInRight" style="table-layout: center;border-width: 2px">
+
+
+                    <tbody>
+                        <tr>
+
+                            <td style="width: 150px;border:solid 2px" class="">
+                                <a style="text-decoration: none">
+                                    <div style="margin-left:10px;">
+                                        <IMG class="static" SRC="services/1hover.jpg" style="width: 130px;padding: 15px;" onclick="myFunction()">
+                                        <IMG class="active" SRC="services/1.gif" style="width: 130px;padding: 15px;" onclick="myFunction()">
+                                    </div>
+                                    <div style="text-align:center;font-size:12px;margin-bottom:14px;text-decoration-color:#000000">
+                                        <font color="#000"><b>ANIMATED<br />EXPLAINERS</b></font>
+                                    </div>
+                                </a>
+                            </td>
+
+
+                            <td style="width: 150px;;border:solid 2px" class="">
+                                <a style="text-decoration: none">
+                                    <div style="margin-left:10px;">
+                                        <IMG class="static" SRC="services/2hover.jpg" style="width: 130px;padding: 15px;" onclick="myFunction()">
+                                        <IMG class="active" SRC="services/2.gif" style="width: 130px;padding: 15px;" onclick="myFunction()">
+                                    </div>
+                                    <div style="text-align:center;font-size:12px;margin-bottom:14px;text-decoration-color:#000000">
+                                        <font color="#000"> <b>LIVE ACTION<br />VIDEOS</b></font>
+                                    </div>
+                                </a>
+                            </td>
+
+
+                            <td style="width: 150px;;border:solid 2px" class="">
+                                <a style="text-decoration: none">
+                                    <div style="margin-left:10px">
+                                        <IMG class="static" SRC="services/3hover.jpg" style="width: 130px;padding: 15px;" onclick="myFunction()">
+                                        <IMG class="active" SRC="services/3.gif" style="width: 130px;padding: 15px;" onclick="myFunction()">
+                                    </div>
+                                    <div style="text-align:center;font-size:12px;margin-bottom:14px;text-decoration-color:#000000">
+                                        <font color="#000"> <b>WEB<br />DESIGN</b></font>
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td style="width: 150px;border:solid 2px;" class="">
+                                <a style="text-decoration: none">
+                                    <div style="margin-left:10px;">
+                                        <IMG class="static" SRC="services/4hover.jpg" style="width: 130px;padding: 15px;" onclick="myFunction()">
+                                        <IMG class="active" SRC="services/4.gif" style="width: 130px;padding: 15px;" onclick="myFunction()">
+                                    </div>
+                                    <div style="text-align:center;font-size:12px;margin-bottom:14px;text-decoration-color:#000000">
+                                        <font color="#000">   <b>BRANDING &amp;<br />POSITIONING</b></font>
+                                    </div>
+                                </a>
+                            </td>
+                            <td style="width: 150px;border:solid 2px;" class="">
+                                <a style="text-decoration: none">
+                                    <div style="margin-left:10px">
+                                        <IMG class="static" SRC="services/5hover.jpg" style="width: 130px;padding: 15px;" onclick="myFunction()">
+                                        <IMG class="active" SRC="services/5.gif" style="width: 130px;padding: 15px;" onclick="myFunction()">
+                                    </div>
+                                    <div style="text-align:center;font-size:12px;margin-bottom:14px;text-decoration-color:#000000">
+                                        <font color="#000"><b style="text-decoration-color:#000000">USER<br />EXPERIENCE</b></font>
+                                    </div>
+                                </a>
+                            </td>
+                            <td style="width: 150px;border:solid 2px;" class="">
+                                <a style="text-decoration: none">
+                                    <div style="margin-left:10px">
+                                        <IMG class="static" SRC="services/6hover.jpg" style="width: 130px;padding: 15px;" onclick="myFunction()">
+                                        <IMG class="active" SRC="services/6.gif" style="width: 130px;padding: 15px;" onclick="myFunction()">
+                                    </div>
+                                    <div style="text-align:center;font-size:12px;margin-bottom:14px;text-decoration-color:#000000">
+                                        <font color="#000"><b>MARKETING<br />COMMUNICATION</b></font>
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <style>
+            .team-image-box {
+                width: 220px;
+                text-align: center;
+            }
+
+            .team-image {
+                padding: 0px;
+                height: 150px;
+                padding-top: 10px;
+            }
+
+            .team-center {
                 margin: auto;
-                border: 3px solid black;
                 padding: 10px;
             }
+
+            .team-designation {
+                text-align: center;
+                font-size: 12px;
+                width: 154px;
+                position: relative;
+                left: 35px;
+                border: 1px solid black;
+            }
+
+            .team-text {
+                text-align: center;
+                font-weight: bold;
+            }
+
+            .btn-get-in-touch {
+                background: #00BFA5 !important;
+                color: black;
+                border: 1px solid #00BFA5;
+            }
+
+            .btn-primary.active, .btn-primary:active, .btn-primary:hover, .btn-primary:focus {
+                background: black !important;
+                color: #00BFA5 !important;
+                border: 1px solid black;
+            }
+
+
+
+
+            /*#reaction-content-area {
+                width: 400px;
+                height: 400px;
+                padding:5px;
+                position: relative;
+                overflow: auto;
+            }*/
         </style>
 
-        <div class="table-responsive   " style="margin-top: 30px;text-align: center;">
-            <table class="center  animated fadeInRight" style="table-layout: center;border-width: 2px">
 
 
-                <tbody>
-                    <tr>
-
-                        <td style="width: 160px;" class="">
-                            <a style="text-decoration: none">
-                                <IMG class="static" SRC="services/1hover.jpg" style="width: 160px;padding: 0px;" onclick="myFunction()"> 
-                                <IMG class="active" SRC="services/1.gif" style="width: 160px;padding: 0px;" onclick="myFunction()"> 
-                            </a>
-                        </td>
-
-
-                        <td style="width: 160px;" class="">
-                            <a style="text-decoration: none">
-                                <IMG class="static" SRC="services/2hover.jpg" style="width: 160px;padding: 0px;" onclick="s()">
-
-                                <IMG class="active" SRC="services/2.gif" style="width: 160px;padding: 0px;" onclick="s()">
-
-                            </a>
-                        </td>
-
-
-                        <td style="width: 160px;" class="">
-                            <a style="text-decoration: none">
-                                <IMG class="static" SRC="services/3hover.jpg" style="width: 160px;padding: 0px;" onclick="myFunction()">
-
-                                <IMG class="active" SRC="services/3.gif" style="width: 160px;padding: 0px;" onclick="myFunction()">
-
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-
-                        <td style="width: 160px;" class="">
-                            <a style="text-decoration: none">
-                                <IMG class="static" SRC="services/4hover.jpg" style="width: 160px;padding: 0px;" onclick="myFunction()">
-
-                                <IMG class="active" SRC="services/4.gif" style="width: 160px;padding: 0px;" onclick="myFunction()">
-
-                            </a>
-                        </td>
-                        <td style="width: 160px;" class="">
-                            <a style="text-decoration: none">
-                                <IMG class="static" SRC="services/5hover.jpg" style="width: 160px;padding: 0px;" onclick="myFunction()">
-
-                                <IMG class="active" SRC="services/5.gif" style="width: 160px;padding: 0px;" onclick="myFunction()">
-
-                            </a>
-                        </td>
-                        <td style="width: 160px;" class="">
-                            <a style="text-decoration: none">
-                                <IMG class="static" SRC="services/6hover.jpg" style="width: 160px;padding: 0px;" onclick="myFunction()">
-
-                                <IMG class="active" SRC="services/6.gif" style="width: 160px;padding: 0px;" onclick="myFunction()">
-
-                            </a>
-                        </td>
-                    </tr>
-
-
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <style>
-        .team-image-box {
-            width: 220px;
-            text-align: center;
-        }
-
-        .team-image {
-            padding: 0px;
-            height: 150px;
-            padding-top: 10px;
-        }
-
-        .team-center {
-            margin: auto;
-            padding: 10px;
-        }
-
-        .team-designation {
-            text-align: center;
-            font-size: 12px;
-            width: 154px;
-            position: relative;
-            left: 35px;
-            border: 1px solid black;
-        }
-
-        .team-text {
-            text-align: center;
-            font-weight: bold;
-        }
-
-        .btn-get-in-touch {
-            background: #00BFA5 !important;
-            color: black;
-            border: 1px solid #00BFA5;
-        }
-
-        .btn-primary.active, .btn-primary:active, .btn-primary:hover, .btn-primary:focus {
-            background: black !important;
-            color: #00BFA5 !important;
-            border: 1px solid black;
-        }
-
-        
-
-        
-        /*#reaction-content-area {
-            width: 400px;
-            height: 400px; 
-            padding:5px;
-            position: relative;
-            overflow: auto;
-        }*/
-    </style>
-
-
-
-    <div id="team" class="col-lg-12  hidden-sm hidden-md fadeInDown animated  ">
-        <div class="col-lg-12  hidden-sm hidden-md fadeIn animated" style="margin-top: 2px;font-size: 15px;text-align: center;">
-            <font color="#00BFA5"><b>THE PASSIONATE PANDAS</b></font>
-        </div>
-        <div class="table-responsive" style="margin-top: 30px;text-align: center;">
-            <table class="team-center  animated fadeInRight" style="table-layout: center;border-width: 2px">
-                <tbody>
-                    <tr>
-                        <td class="team-image-box">
-                            <img src="teamimages/1.jpg" class="team-image">
-                            <div class="team-text">Harsha Bandaru</div>
-                            <div class="team-designation">
-                                <div>
-                                    Founder | Creative Director
-                                </div>
-                            </div>
-                        </td>
-
-                        <td class="team-image-box">
-                            <img src="teamimages/2.jpg" class="team-image">
-                            <div class="team-text">Vanitha Gaja</div>
-                            <div class="team-designation">Chief Ideation Director</div>
-                        </td>
-                        <td class="team-image-box">
-                            <img src="teamimages/3.jpg" class="team-image">
-                            <div class="team-text">Aakarsh Naidu</div>
-                            <div class="team-designation">Mentor</div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="table-responsive" style="margin-top: 30px;text-align: center;">
-            <table class="team-center  animated fadeInRight" style="table-layout: center;border-width: 2px">
-                <tbody>
-                    <tr>
-                        <td class="team-image-box">
-                            <img src="teamimages/4.jpg" class="team-image">
-                            <div class="team-text">Kishore Kodali</div>
-                            <div class="team-designation">
-                                <div>
-                                    Motion Graphics Designer
-                                </div>
-                            </div>
-                        </td>
-
-                        <td class="team-image-box">
-                            <img src="teamimages/5.jpg" class="team-image">
-                            <div class="team-text">Vivek Nekkala</div>
-                            <div class="team-designation">Cinematographer | Editor</div>
-                        </td>
-
-
-                        <td class="team-image-box">
-                            <img src="teamimages/6.jpg" class="team-image">
-                            <div class="team-text">Sai Sujatha</div>
-                            <div class="team-designation">Motion Graphics Designer</div>
-                        </td>
-                        <td class="team-image-box">
-                            <img src="teamimages/7.jpg" class="team-image">
-                            <div class="team-text">Aditya Mangal</div>
-                            <div class="team-designation">Digital marketing strategist</div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <div id="lab" class="col-lg-12  hidden-sm hidden-md ">
-        <div class="col-lg-12  hidden-sm hidden-md fadeInRight animated " style="margin-top: 2px;font-size: 15px;text-align: center;">
-            <font color="#00BFA5"><b>IN-HOUSE PRODUCTION</b></font>
-        </div>
-        <div class="col-lg-6 fadeInRight animated " style="margin-top:15px;text-align: center">
-            <div class="col-lg-12">
-                <div style="font-size:25px;text-align: center"  class="col-lg-12"><b>THE STARTUP VIDEO</b></div>
-                <iframe width="560" height="260" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div id="team" class="col-lg-12  hidden-sm hidden-md fadeInDown animated  ">
+            <div class="col-lg-12  hidden-sm hidden-md fadeIn animated" style="margin-top: 2px;font-size: 15px;text-align: center;">
+                <font color="#00BFA5"><b>THE PASSIONATE PANDAS</b></font>
             </div>
-            <div >
-                <p>
-                    The 90 seconds video will change your perception about startups !
-                </p>
-                <div  class="col-lg-12"  style="text-align: left"><span style="color:#00BFA5;font-weight:bold;width:28px;;text-align: left;display:inline-block;text-align:left">608</span><span style="font-weight:bold">Founders</span></div>
-                <div  class="col-lg-12" style="color:gray;font-size:12px;margin-top: -3px;text-align: left;">Watched the video</div>
-                <div  class="col-lg-12"  style="text-align: left"><span style="font-weight:bold;width:88px;display:inline-block;text-align: left">VIEWS</span><span style="color:#00BFA5;font-weight:bold"> 65,000+</span></div>
-                <div class="col-lg-12"  style="text-align: left"><span style="font-weight:bold;width:88px;display:inline-block;text-align: left">REACH</span><span style="color:#00BFA5;font-weight:bold">246,630+</span></div>
-                <div class="col-lg-12"  style="text-align: left"><span style="font-weight:bold;width:88px;display:inline-block;text-align: left">SHARES</span><span style="color:#00BFA5;font-weight:bold">958+</span></div>
-                <div class="col-lg-12" style="text-align: left"><span style="font-weight:bold;width:88px;display:inline-block">REACTIONS</span><span style="color:#00BFA5;font-weight:bold">6,195+</span></div>
-                <div class="col-lg-12" style="color:gray;margin-top: -3px;margin-bottom:30px;text-align: left">in 3 weeks across the Globe</div> 
+            <div class="table-responsive" style="margin-top: 30px;text-align: center;">
+                <table class="team-center  animated fadeInRight" style="table-layout: center;border-width: 2px">
+                    <tbody>
+                        <tr>
+                            <td class="team-image-box">
+                                <img src="teamimages/1.jpg" class="team-image">
+                                <div class="team-text">Harsha Bandaru</div>
+                                <div class="team-designation">
+                                    <div>
+                                        Founder | Creative Director
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td class="team-image-box">
+                                <img src="teamimages/2.jpg" class="team-image">
+                                <div class="team-text">Vanitha Gaja</div>
+                                <div class="team-designation">Chief Ideation Director</div>
+                            </td>
+                            <td class="team-image-box">
+                                <img src="teamimages/3.jpg" class="team-image">
+                                <div class="team-text">Aakarsh Naidu</div>
+                                <div class="team-designation">Mentor</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-responsive" style="margin-top: 30px;text-align: center;">
+                <table class="team-center  animated fadeInRight" style="table-layout: center;border-width: 2px">
+                    <tbody>
+                        <tr>
+                            <td class="team-image-box">
+                                <img src="teamimages/4.jpg" class="team-image">
+                                <div class="team-text">Kishore Kodali</div>
+                                <div class="team-designation">
+                                    <div>
+                                        Motion Graphics Designer
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td class="team-image-box">
+                                <img src="teamimages/5.jpg" class="team-image">
+                                <div class="team-text">Vivek Nekkala</div>
+                                <div class="team-designation">Cinematographer | Editor</div>
+                            </td>
+
+
+                            <td class="team-image-box">
+                                <img src="teamimages/6.jpg" class="team-image">
+                                <div class="team-text">Sai Sujatha</div>
+                                <div class="team-designation">Motion Graphics Designer</div>
+                            </td>
+                            <td class="team-image-box">
+                                <img src="teamimages/7.jpg" class="team-image">
+                                <div class="team-text">Aditya Mangal</div>
+                                <div class="team-designation">Digital marketing strategist</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-        <div class="col-lg-6 fadeInRight animated " style="margin-top:15px">
-            <div id="reaction-content-area" style="cursor:pointer" class="col-lg-12">
-                <b>REACTIONS</b>
-                <p style="margin-right:15px">
-                    Absolutely nothing else can be so blunt &amp; direct.
-                    <br>time for both investors &amp; wannable Startups t0 look within and decide. You don't become a CEO overnight just because you decided to be a startup.
-                    <br>People look at the success stories of Flipkart but no one seems to be seen standing outside a book store to distribute book marks the way Bansals of FK did.
-                    <br> I totally support the statement made by Anil Chhikara, you are not a CEO if your company is not making revenues.
-                    <br><span style="color:gray;float:right">-Akash Agarwal, Owner Emerecard</span>
-                    <br>
-                    <br>Preamble of start-up comapny... explained !!!
-                    <br>Excellent work Team ToonPandas.
-                    <br><span style="color:gray;float:right">-Gaurav Ranebennur,</span>
-                    <br><span style="color:gray;float:right">Founder &amp; CEO, E Lorre</span>
-                    <br>
-                    <br>"Well said...It's not about making millions. It's about the mindset...Kudos to the tremendous job that you all are doing in providing the great ecosystem to the startups"
-                    <br><span style="color:gray;float:right">-Nidhi Gupta, California</span>
-                    <br>
-                    <br>For all the start-ups enthisiasts out there, if you wanna start, do it after you watch this video... #TheStartupVideo, #ToonPandas...Inspiring video, Nice work bro Harsha Bandaru
-                    <br><span style="color:gray;float:right">-Roehan Rangadurai, MICA</span>
-                    <br><span style="color:gray;float:right">International Photographer</span>
-                    <br>
-                    <br>Short and insightful.. good work Harsha &amp; Team ToonPandas
-                    <br><span style="color:gray;float:right">-Sudha Datta, IIM Rohtak</span>
-                    <br><span style="color:gray;float:right">Coal India Limited</span>  
-                    <br>
-                    <br>"Starting Up is not just about the Millions, It's the Mindset!" Well Said..
-                    <br><span style="color:red;float:right">-NSRCEL, IIM Bangalore</span> 
-</div>
-    </div>
-</div>
+
+        <div id="lab" class="col-lg-12  hidden-sm hidden-md ">
+            <div class="col-lg-12  hidden-sm hidden-md fadeInRight animated " style="margin-top: 2px;font-size: 15px;text-align: center;">
+                <font color="#00BFA5"><b>IN-HOUSE PRODUCTION</b></font>
+            </div>
+            <div class="col-lg-6 fadeInRight animated " style="margin-top:15px;text-align: center">
+                <div class="col-lg-12">
+                    <div style="font-size:25px;text-align: center" class="col-lg-12"><b>THE STARTUP VIDEO</b></div>
+                    <iframe width="560" height="260" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <p>
+                        The 90 seconds video will change your perception about startups !
+                    </p>
+                    <div class="col-lg-12" style="text-align: left"><span style="color:#00BFA5;font-weight:bold;width:28px;;text-align: left;display:inline-block;text-align:left">608</span><span style="font-weight:bold">Founders</span></div>
+                    <div class="col-lg-12" style="color:gray;font-size:12px;margin-top: -3px;text-align: left;">Watched the video</div>
+                    <div class="col-lg-12" style="text-align: left"><span style="font-weight:bold;width:88px;display:inline-block;text-align: left">VIEWS</span><span style="color:#00BFA5;font-weight:bold"> 65,000+</span></div>
+                    <div class="col-lg-12" style="text-align: left"><span style="font-weight:bold;width:88px;display:inline-block;text-align: left">REACH</span><span style="color:#00BFA5;font-weight:bold">246,630+</span></div>
+                    <div class="col-lg-12" style="text-align: left"><span style="font-weight:bold;width:88px;display:inline-block;text-align: left">SHARES</span><span style="color:#00BFA5;font-weight:bold">958+</span></div>
+                    <div class="col-lg-12" style="text-align: left"><span style="font-weight:bold;width:88px;display:inline-block">REACTIONS</span><span style="color:#00BFA5;font-weight:bold">6,195+</span></div>
+                    <div class="col-lg-12" style="color:gray;margin-top: -3px;margin-bottom:30px;text-align: left">in 3 weeks across the Globe</div>
+                </div>
+            </div>
+            <div class="col-lg-6 fadeInRight animated " style="margin-top:15px">
+                <div id="reaction-content-area" style="cursor:pointer" class="col-lg-12">
+                    <b>REACTIONS</b>
+                    <p style="margin-right:15px">
+                        Absolutely nothing else can be so blunt &amp; direct.
+                        <br>time for both investors &amp; wannable Startups t0 look within and decide. You don't become a CEO overnight just because you decided to be a startup.
+                        <br>People look at the success stories of Flipkart but no one seems to be seen standing outside a book store to distribute book marks the way Bansals of FK did.
+                        <br> I totally support the statement made by Anil Chhikara, you are not a CEO if your company is not making revenues.
+                        <br><span style="color:gray;float:right">-Akash Agarwal, Owner Emerecard</span>
+                        <br>
+                        <br>Preamble of start-up comapny... explained !!!
+                        <br>Excellent work Team ToonPandas.
+                        <br><span style="color:gray;float:right">-Gaurav Ranebennur,</span>
+                        <br><span style="color:gray;float:right">Founder &amp; CEO, E Lorre</span>
+                        <br>
+                        <br>"Well said...It's not about making millions. It's about the mindset...Kudos to the tremendous job that you all are doing in providing the great ecosystem to the startups"
+                        <br><span style="color:gray;float:right">-Nidhi Gupta, California</span>
+                        <br>
+                        <br>For all the start-ups enthisiasts out there, if you wanna start, do it after you watch this video... #TheStartupVideo, #ToonPandas...Inspiring video, Nice work bro Harsha Bandaru
+                        <br><span style="color:gray;float:right">-Roehan Rangadurai, MICA</span>
+                        <br><span style="color:gray;float:right">International Photographer</span>
+                        <br>
+                        <br>Short and insightful.. good work Harsha &amp; Team ToonPandas
+                        <br><span style="color:gray;float:right">-Sudha Datta, IIM Rohtak</span>
+                        <br><span style="color:gray;float:right">Coal India Limited</span>
+                        <br>
+                        <br>"Starting Up is not just about the Millions, It's the Mindset!" Well Said..
+                        <br><span style="color:red;float:right">-NSRCEL, IIM Bangalore</span>
+                </div>
+            </div>
+        </div>
 
 
-    <div id="contact" class="col-lg-12  hidden-sm hidden-md  fadeInLeft animated ">
-        <div class="col-lg-12  hidden-sm hidden-md " style="margin-top: 2px;font-size: 15px;text-align: center;">
-            <font color="#00BFA5"><b>LET'S TALK !</b></font>
-        </div>
-        <div class="row" style="margin-top:55px">
-            <div class="col-lg-4 col-lg-offset-2">  <input placeholder="Your Name (required)" style="width:100% !important;padding-left:5px;padding-right:5px"></div>
-            <div class="col-lg-4">   <input placeholder="Your E-Mail (required)"  style="width:100% !important;padding-left:5px;padding-right:5px"></div>
-        </div>
-        <div class="row" style="margin-top:25px">
-            <div class="col-lg-8 col-lg-offset-2">
-                <textarea rows="3" placeholder="Your Message" style="width:100% !important;padding:5px"></textarea>
-            </div>           
-        </div>
-       
+        <div id="contact" class="col-lg-12  hidden-sm hidden-md  fadeInLeft animated ">
+            <div class="col-lg-12  hidden-sm hidden-md " style="margin-top: 2px;font-size: 15px;text-align: center;">
+                <font color="#00BFA5"><b>LET'S TALK !</b></font>
+            </div>
+            <div class="row" style="margin-top:55px">
+                <div class="col-lg-4 col-lg-offset-2">  <input placeholder="Your Name (required)" style="width:100% !important;padding-left:5px;padding-right:5px"></div>
+                <div class="col-lg-4">   <input placeholder="Your E-Mail (required)" style="width:100% !important;padding-left:5px;padding-right:5px"></div>
+            </div>
+            <div class="row" style="margin-top:25px">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <textarea rows="3" placeholder="Your Message" style="width:100% !important;padding:5px"></textarea>
+                </div>
+            </div>
+
             <div class="row" style="margin-top:35px;text-align:center"><button class="btn btn-primary btn-sm btn-get-in-touch" style="font-weight:bold">GET IN TOUCH</button></div>
-            
+
             <div class="row" style="text-align:center;margin-top:50px">
                 <div class="col-lg-4 col-lg-offset-2" style="font-size:25px;font-weight:bold">JayaNagar, Bengaluru</div>
                 <div class="col-lg-4" style="font-size:25px;font-weight:bold">+91 973 901 0612</div>
@@ -767,6 +797,15 @@
 
                 var img = document.getElementById('servicepage');
                 img.style.visibility = 'visible';
+                var img = document.getElementById('teampage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('labpage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('contactpage');
+                img.style.visibility = 'visible';
+
+
+
             }
 
 
@@ -780,13 +819,20 @@
                 $('#protfolio').show();
 
                 var img = document.getElementById('aboutimage');
-                img.style.visibility = 'hidden';
+                img.style.visibility = 'visible ';
 
                 var img = document.getElementById('portimage');
+                img.style.visibility = 'hidden';
+                var img = document.getElementById('servicepage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('teampage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('labpage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('contactpage');
                 img.style.visibility = 'visible';
 
-                var img = document.getElementById('servicepage');
-                img.style.visibility = 'hidden';
+
             }
 
 
@@ -804,10 +850,17 @@
                 img.style.visibility = 'visible ';
 
                 var img = document.getElementById('portimage');
-                img.style.visibility = 'hidden';
-
+                img.style.visibility = 'visible';
                 var img = document.getElementById('servicepage');
                 img.style.visibility = 'hidden';
+                var img = document.getElementById('teampage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('labpage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('contactpage');
+                img.style.visibility = 'visible';
+
+
             }
 
             function teamClick() {
@@ -823,10 +876,16 @@
                 img.style.visibility = 'visible ';
 
                 var img = document.getElementById('portimage');
-                img.style.visibility = 'hidden';
+                img.style.visibility = 'visible';
 
                 var img = document.getElementById('servicepage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('teampage');
                 img.style.visibility = 'hidden';
+                var img = document.getElementById('labpage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('contactpage');
+                img.style.visibility = 'visible';
             }
 
 
@@ -843,10 +902,16 @@
                 img.style.visibility = 'visible ';
 
                 var img = document.getElementById('portimage');
-                img.style.visibility = 'hidden';
+                img.style.visibility = 'visible';
 
                 var img = document.getElementById('servicepage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('teampage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('labpage');
                 img.style.visibility = 'hidden';
+                var img = document.getElementById('contactpage');
+                img.style.visibility = 'visible';
             }
 
             function contactClick() {
@@ -857,7 +922,6 @@
                 $('#lab').hide();
                 $('#team').hide();
                 $('#protfolio').hide();
-
                 var img = document.getElementById('aboutimage');
                 img.style.visibility = 'visible ';
 
@@ -865,12 +929,20 @@
                 img.style.visibility = 'visible';
 
                 var img = document.getElementById('servicepage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('teampage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('labpage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('contactpage');
                 img.style.visibility = 'hidden';
             }
 
             function myFunctionhome() {
 
-                window.location.href = "../index.html";
+                $('#bodydiv').css('visibility', 'hidden');
+                $('#loading').css('visibility', 'visible');
+                document.getElementById("pandaloader").src = "images/toon.gif";
             }
 
             var query = window.location.search.substring(1);
@@ -883,7 +955,7 @@
                 }
             }
 
-           // $('#reaction-content-area').perfectScrollbar();
+            // $('#reaction-content-area').perfectScrollbar();
 
             $(function () {
                 $('#reaction-content-area').slimScroll({
@@ -893,9 +965,22 @@
                     alwaysVisible: true
                 });
             });
-           
+
         </script>
+    </div>
 </body>
+
+      
+<script>
+    $('#bodydiv').css('visibility', 'hidden');
+    $('#loading').css('visibility', 'visible');
+    function myFunction() {
+      
+        $('#bodydiv').css('visibility', 'visible');
+        $('#loading').css('visibility', 'hidden');
+    }
+</script>
+
 </html>
 
-<!-- Done by Dwarsoft - www.dwarsoft.com///. -->
+<!-- Developed by Dwarsoft - www.dwarsoft.com///This code cannot be reused. If found, user will be subjected with legal penalty. -->
