@@ -237,19 +237,43 @@
             </div>
 
 
-
+<style>
+    #myCarousel {
+        padding: 0 10px 30px 10px;
+        margin-top: 30px;
+        text-align: center;
+    }
+        /* indicator position */
+        #myCarousel .carousel-indicators {
+            right: 50%;
+            top: auto;
+            bottom: -10px;
+            margin-right: -19px;
+        }
+            /* indicator color */
+            #myCarousel .carousel-indicators li {
+                background: #c0c0c0;
+            }
+            /* active indicator */
+            #myCarousel .carousel-indicators .active {
+                background: #333333;
+                height: 10px;
+                width: 10px;
+                margin-bottom: 1px;
+            }
+</style>
 
             <div id="homepagebase" style="animation-delay: 1s;" class="col-lg-12  hidden-sm hidden-md animated  fadeIn  ">
 
                 <div class="col-md-10 col-md-offset-1" style="margin-top: 30px;" style="animation-delay: 4s;">
-                  
-                    <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="2000" id="myCarousel" style="margin-top:30px">
-                        <ol class="carousel-indicators" >
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                  <ol class="carousel-indicators" style="margin-bottom:-60px">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active" style="background :#D3D3D3"></li>
+                            <li data-target="#myCarousel" data-slide-to="1" style="background :#D3D3D3"></li>
+                            <li data-target="#myCarousel" data-slide-to="2" style="background :#D3D3D3"></li>
+                            <li data-target="#myCarousel" data-slide-to="3" style="background :#D3D3D3"></li>
                         </ol>
+                    <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="2000" id="myCarousel" style="margin-top:30px">
+                        
                         <div class="carousel-inner">
                             <div class="item active">
                                 <div class="col-md-2 col-sm-6 col-xs-12">
@@ -368,13 +392,25 @@
                         <div class="carousel-inner">
                             <div class="item active">
                                 <div class="col-md-2 col-sm-6 col-xs-12">
-                                    <a href="#">
+                                     <a href="#">
                                         <div style="padding:10px">
-                                            <iframe width="130" height="130" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                             <button style="width:130px;height:130px;background:url('services/3hover.jpg')" src="services/3hover.jpg" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button>
                                         </div>
                                         <div style="padding:10px">
-                                            <iframe width="130" height="130" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                            <button style="width:130px;height:130px;background:url('services/3hover.jpg')" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" src="services/3hover.jpg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button>
+                                      </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                     <a href="#">
+                                        <div style="padding:10px">
+                                             <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="width:130px;height:130px;background:url('services/3hover.jpg')" src="services/3hover.jpg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button>
                                         </div>
+                                        <div style="padding:10px">
+                                            <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="width:130px;height:130px;background:url('services/3hover.jpg')" src="services/3hover.jpg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button>
+                                      </div>
                                     </a>
                                 </div>
                             </div>
@@ -382,36 +418,24 @@
                                 <div class="col-md-2 col-sm-6 col-xs-12">
                                     <a href="#">
                                         <div style="padding:10px">
-                                            <iframe width="130" height="130" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                             <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="width:130px;height:130px;background:url('services/3hover.jpg')" src="services/3hover.jpg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button>
                                         </div>
                                         <div style="padding:10px">
-                                            <iframe width="130" height="130" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-2 col-sm-6 col-xs-12">
-                                    <a href="#">
-                                        <div style="padding:10px">
-                                            <iframe width="130" height="130" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                        </div>
-                                        <div style="padding:10px">
-                                            <iframe width="130" height="130" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                        </div>
+                                            <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="width:130px;height:130px;background:url('services/3hover.jpg')" src="services/3hover.jpg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button>
+                                      </div>
                                     </a>
                                 </div>
                             </div>
 
                             <div class="item">
                                 <div class="col-md-2 col-sm-6 col-xs-12">
-                                    <a href="#">
+                                      <a href="#">
                                         <div style="padding:10px">
-                                            <iframe width="130" height="130" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                             <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="width:130px;height:130px;background:url('services/3hover.jpg')" src="services/3hover.jpg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button>
                                         </div>
                                         <div style="padding:10px">
-                                            <iframe width="130" height="130" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                        </div>
+                                            <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="width:130px;height:130px;background:url('services/3hover.jpg')" src="services/3hover.jpg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button>
+                                      </div>
                                     </a>
                                 </div>
                             </div>
@@ -421,6 +445,21 @@
                     </div>
                 </div>
             </div>
+			<!-- Modal -->
+<div id="myModal" style="margin-top:120px" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/nv21Xz8yudU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+      </div>
+
+    </div>
+
+  </div>
+</div>
 <style>
     #quote-carousel {
         padding: 0 10px 30px 10px;
@@ -446,10 +485,9 @@
                 margin-bottom: 1px;
             }
 </style>
-<div class="col-xs-12" style="text-align:center;margin-top:20px">
-    
+    <div class="col-xs-12" style="text-align:center;margin-top:20px">    
     <h1>Testimonials</h1>
-</div>
+    </div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
