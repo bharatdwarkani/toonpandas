@@ -7,45 +7,56 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src=" https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js"></script>
-<script>
-(function($, viewport){
+    <script>
 
 
+    </script>
+    <style>
+        .mobile-container {
+            max-width: 480px;
+            margin: auto;
+            background-color: #555;
+            height: 500px;
+            color: white;
+            border-radius: 10px;
+        }
 
-// Execute only after document has fully loaded
-$(document).ready(function() {
-    if( viewport.is('xs') ) {
-        alert();
-        // ...
-    }
-});
+        .topnav3 {
+            overflow: hidden;
+            background-color: #333;
+            position: relative;
+        }
 
-// Execute code each time window size changes
-$(window).resize(
-    viewport.changed(function() {
-       // Executes only in XS breakpoint
-if( viewport.is('xs') ) {
-    alert();
-    // ...
-}
+        .topnav3 #myLinks {
+            display: none;
+        }
 
-// Executes in SM, MD and LG breakpoints
-if( viewport.is('>=sm') ) {
-    alert();
-    // ...
-}
+        .topnav3 a {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+        }
 
-// Executes in XS and SM breakpoints
-if( viewport.is('<md') ) {
-    alert();
-    // ...
-}
-    })
-); 
+        .topnav3 a.icon {
+            background: black;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
 
-})(jQuery, ResponsiveBootstrapToolkit);
+        .topnav3 a:hover {
+            background-color: #ddd;
+            color: black;
+        }
 
-</script>
+        .active2 {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
     <style>
         @import url(https://fonts.googleapis.com/css?family=Lato:400,300,900,700);
 
@@ -176,14 +187,26 @@ if( viewport.is('<md') ) {
 </head>
 
 <div id="users-device-size">
-        <div id="xs" class="visible-xs"></div>
-        <div id="sm" class="visible-sm"></div>
-        <div id="md" class="visible-md"></div>
-        <div id="lg" class="visible-lg"></div>
-      </div>
-     
+    <div id="xs" class="visible-xs"></div>
+    <div id="sm" class="visible-sm"></div>
+    <div id="md" class="visible-md"></div>
+    <div id="lg" class="visible-lg"></div>
+</div>
 
 
+<!-- Top Navigation Menu -->
+
+<div class="topnav3 hidden" id="topnav3">
+    <a href="#home" class="active2">Logo</a>
+    <div id="myLinks">
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunctiontop()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
 
 <body class="" style="position: relative; ">
 
@@ -197,7 +220,7 @@ if( viewport.is('<md') ) {
     </div>
     <div id="bodydiv" class="">
 
-        <div class="hidden-lg col-xs-12 topnav " style="text-align: center;margin-top:100px" class="col-lg-12 hidden-sm hidden-md">
+        <div id="barmenu" class="hidden-lg col-xs-12 topnav " style="text-align: center;margin-top:100px" class="col-lg-12 hidden-sm hidden-md">
             <div class="hidden-lg col-xs-12" style="margin-top: 10px;margin-bottom: 10px;" id="menubar">
 
                 <div class="col-xs-12">
@@ -207,14 +230,16 @@ if( viewport.is('<md') ) {
                         <IMG class="active" SRC="menu/about-hover.jpg" style="height: 100px;width: 100px;padding: 0px;margin: 10px" onclick="myFunctionhomess()">
                     </a>
                     <a style="text-decoration: none" class="col-xs-6">
-                        <IMG class="static" SRC="menu/portfolio.jpg" id="portimage" style="height: 100px;width: 100px;padding: 0px;margin: 10px" onclick="myFunctionportfolio()">
+                        <IMG class="static" SRC="menu/portfolio.jpg" id="portimage" style="height: 100px;width: 100px;padding: 0px;margin: 10px"
+                            onclick="myFunctionportfolio()">
                         <IMG class="active" SRC="menu/portfolio-hover.jpg" style="height: 100px;width: 100px;padding: 0px;margin: 10px" onclick="myFunctionportfolio()">
                     </a>
                 </div>
 
                 <div class="col-xs-12">
                     <a style="text-decoration: none" class="col-xs-6">
-                        <IMG class="static" SRC="menu/services.jpg" id="servicepage" style="height: 100px;width: 100px;padding: 0px;margin: 10px" onclick="myFunctionservices()">
+                        <IMG class="static" SRC="menu/services.jpg" id="servicepage" style="height: 100px;width: 100px;padding: 0px;margin: 10px"
+                            onclick="myFunctionservices()">
                         <IMG class="active" SRC="menu/services-hover.jpg" style="height: 100px;width: 100px;padding: 0px;margin: 10px" onclick="myFunctionservices()">
                     </a>
 
@@ -236,7 +261,8 @@ if( viewport.is('<md') ) {
                     </a>
 
                     <a style="text-decoration: none" class="col-xs-6">
-                        <IMG class="static" SRC="menu/contact.jpg" id="contactpage" style="height: 100px;width: 100px;padding: 0px;margin: 10px" onclick="contactClick()">
+                        <IMG class="static" SRC="menu/contact.jpg" id="contactpage" style="height: 100px;width: 100px;padding: 0px;margin: 10px"
+                            onclick="contactClick()">
 
                         <IMG class="active" SRC="menu/contact-hover.jpg" style="height: 100px;width: 100px;padding: 0px;margin: 10px" onclick="contactClick()">
                     </a>
@@ -1219,8 +1245,8 @@ if( viewport.is('<md') ) {
         </div>
 
 
-        <div id="contact" class="col-lg-12  hidden-sm hidden-md  fadeInLeft animated ">
-            <div class="col-lg-12  hidden-sm hidden-md " style="margin-top: 2px;font-size: 15px;text-align: center;">
+        <div id="contact" class="hidden-sm hidden-xs hidden-md  col-lg-12    fadeInLeft animated ">
+            <div class="  hidden-sm hidden-md col-lg-12  " style="margin-top: 2px;font-size: 15px;text-align: center;">
                 <font color="#00BFA5">
                     <b>LET'S TALK !</b>
                 </font>
@@ -1270,6 +1296,58 @@ if( viewport.is('<md') ) {
                 </div>
             </div>
         </div>
+        <div id="contactupmobile" class="hidden col-lg-12    fadeInLeft animated " style="margin-top: 100px">
+                <div class="  hidden-sm hidden-md col-lg-12  " style="margin-top: 2px;font-size: 15px;text-align: center;">
+                    <font color="#00BFA5">
+                        <b>LET'S TALK !</b>
+                    </font>
+                </div>
+                <div class="row" style="margin-top:55px">
+                    <div class="col-lg-4 col-lg-offset-2">
+                        <input placeholder="Your Name (required)" style="width:100% !important;padding-left:5px;padding-right:5px">
+                    </div>
+                    <div class="col-lg-4">
+                        <input placeholder="Your E-Mail (required)" style="width:100% !important;padding-left:5px;padding-right:5px">
+                    </div>
+                </div>
+                <div class="row" style="margin-top:25px">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <textarea rows="3" placeholder="Your Message" style="width:100% !important;padding:5px"></textarea>
+                    </div>
+                </div>
+    
+                <div class="row" style="margin-top:35px;text-align:center">
+                    <button class="btn btn-primary btn-sm btn-get-in-touch" style="font-weight:bold">GET IN TOUCH</button>
+                </div>
+    
+                <div class="row" style="text-align:center;margin-top:50px">
+                    <div class="col-lg-4 col-lg-offset-2" style="font-size:25px;font-weight:bold">JayaNagar, Bengaluru</div>
+                    <div class="col-lg-4" style="font-size:25px;font-weight:bold">+91 973 901 0612</div>
+                </div>
+                <div class="row" style="text-align:center">
+                    <div class="col-lg-12" style="font-size:25px;font-weight:bold;margin-top:25px;text-align:center">
+                        <div style="margin-right:36%">
+                            <div style="float:right;padding:2px;border: solid 2px;margin:2px">
+                                <IMG class="static" SRC="socialicons/1hover.jpg" style="width: 18px;height:18px">
+                                <IMG class="active" SRC="socialicons/1.jpg" style="width: 18px;height: 18px;">
+                            </div>
+                            <div style="float:right;padding:2px;border: solid 2px;margin:2px">
+                                <IMG class="static" SRC="socialicons/2hover.jpg" style="width: 18px;height:18px">
+                                <IMG class="active" SRC="socialicons/2.jpg" style="width: 18px;height: 18px;">
+                            </div>
+                            <div style="float:right;padding:2px;border: solid 2px;margin:2px">
+                                <IMG class="static" SRC="socialicons/3hover.jpg" style="width: 18px;height:18px">
+                                <IMG class="active" SRC="socialicons/3.jpg" style="width: 18px;height: 18px;">
+                            </div>
+                            <div style="float:right;padding:2px;border: solid 2px;margin:2px">
+                                <IMG class="static" SRC="socialicons/4hover.jpg" style="width: 18px;height:18px">
+                                <IMG class="active" SRC="socialicons/4.jpg" style="width: 18px;height: 18px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
         <script type="text/javascript">
 
@@ -1474,6 +1552,17 @@ if( viewport.is('<md') ) {
                 img.style.visibility = 'visible';
                 var img = document.getElementById('contactpage');
                 img.style.visibility = 'hidden';
+                var sizescr = $('#users-device-size').find('div:visible').first().attr('id');
+
+                if (sizescr == "xs" || sizescr == "sm" || sizescr == "md") {
+                    $('#barmenu').addClass('hidden');
+                
+                    $('#contactupmobile').removeClass('hidden');
+                    $('#topnav3').removeClass('hidden');
+
+                }
+
+
             }
 
             function myFunctionhome() {
@@ -1514,6 +1603,7 @@ if( viewport.is('<md') ) {
                 });;
 
 
+
             }
 
             var query = window.location.search.substring(1);
@@ -1539,15 +1629,16 @@ if( viewport.is('<md') ) {
 
         </script>
     </div>
+
 </body>
 
 
 <script>
-     $('#pandaloader').addClass('hidden-xs');
-     $('#pandaloader').addClass('hidden-sm');
-     $('#pandaloader').addClass('hidden-md');
+    $('#pandaloader').addClass('hidden-xs');
+    $('#pandaloader').addClass('hidden-sm');
+    $('#pandaloader').addClass('hidden-md');
 
-    
+
     $('#bodydiv').css('visibility', 'hidden');
     $('#loading').css('visibility', 'visible');
     function myFunction() {
@@ -1567,14 +1658,22 @@ if( viewport.is('<md') ) {
 
     }
 </script>
- <script>
-         
-        var sizescr= $('#users-device-size').find('div:visible').first().attr('id');
-        if(sizescr=="xs" ||sizescr=="sm" ||sizescr=="md"  )
-        {
-            $("#bodydiv").css('visibility', 'visible');
+<script>
+
+
+    var sizescr = $('#users-device-size').find('div:visible').first().attr('id');
+    if (sizescr == "xs" || sizescr == "sm" || sizescr == "md") {
+        $("#bodydiv").css('visibility', 'visible');
+    }
+    function myFunctiontop() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
         }
-              </script>
+    }
+</script>
 
 </html>
 
