@@ -142,19 +142,19 @@
     <title>ToonPandas</title>
 </head>
 
-<body class="hidden-sm hidden-xs" style="position: relative; ">
+<body class="" style="position: relative; ">
 
-    <div class="hidden-sm hidden-md" id="loading" >
-        <div class="hidden-sm hidden-md col-xs-12" >
+    <div class="" id="loading" >
+        <div class=" col-xs-12" >
 
-            <IMG id="pandaloader" style="position: absolute;" SRC="images/toon.gif" style="width: 100%;padding: 0px;margin: 0px" onclick="myFunction()">
+            <IMG id="pandaloader" class="fadeInDown animated"  SRC="images/toon.gif" style="position: absolute;width: 100%;padding: 0px;margin: 0px" onclick="myFunction()">
             </IMG>
             
         </div>
     </div>
     <div id="bodydiv"  >
         <div class="topnav" style="text-align: center;" class="col-lg-12 hidden-sm hidden-md">
-            <div class="col-lg-12 hidden-sm hidden-md" style="margin-top: 10px;margin-bottom: 10px;">
+            <div class="col-lg-12 hidden-sm hidden-md" style="margin-top: 10px;margin-bottom: 10px;" id="menubar">
 
                 <a style="text-decoration: none;">
 
@@ -220,7 +220,7 @@
 
             </div>
 
-            <div id="homepage" style="animation-delay: 1s;" class="col-lg-12  hidden-sm hidden-md animated  fadeInDown   ">
+            <div id="homepage" class="col-lg-12  hidden-sm hidden-md animated  fadeInDown   ">
 
                 <div class="col-lg-12  hidden-sm hidden-md  " style="margin-top: 30px;font-size: 30px;">
                     FRESH PIXELS MADE DAILY,<font color="#00BFA5"> THE BEST WAY.</font>
@@ -1036,7 +1036,8 @@
                     $('#lab').hide();
                     $('#team').hide();
                     $('#protfolio').hide();
-
+                    $('#homepage').hide();
+                        $('#homepagebase').hide();
                     function myFunctionhomess() {
                         $('#homepage').show();
                         $('#homepagebase').show();
@@ -1196,10 +1197,43 @@
                     }
 
                     function myFunctionhome() {
+                        
+                        var img = document.getElementById('aboutimage');
+                        img.style.visibility = 'hidden';
 
+                        var img = document.getElementById('portimage');
+                        img.style.visibility = 'hidden';
+
+                        var img = document.getElementById('servicepage');
+                        img.style.visibility = 'hidden';
+                        var img = document.getElementById('teampage');
+                        img.style.visibility = 'hidden';
+                        var img = document.getElementById('labpage');
+                        img.style.visibility = 'hidden';
+                        var img = document.getElementById('contactpage');
+                        img.style.visibility = 'hidden';
+
+
+                        $('#pandaloader').css('visibility', 'visible');
                         $('#bodydiv').css('visibility', 'hidden');
-                        $('#loading').css('visibility', 'visible');
-                        document.getElementById("pandaloader").src = "images/toon.gif";
+
+
+      $('#loading').css('visibility', 'visible');
+      $("#pandaloader").load("images/toon.gif");
+      $('#menubar').css('visibility', 'hidden');
+                          e1 = $('#pandaloader');
+      
+      e1.slideDown( "fast", function() {
+  // Animation complete.
+  document.getElementById("pandaloader").src = "images/toon.gif";
+  $('#bodydiv').css('visibility', 'hidden');
+  
+  
+      $('#loading').css('visibility', 'visible');
+
+});;
+     
+
                     }
 
                     var query = window.location.search.substring(1);
@@ -1232,9 +1266,20 @@
     $('#bodydiv').css('visibility', 'hidden');
     $('#loading').css('visibility', 'visible');
     function myFunction() {
+        
+        e1 = $('#pandaloader');
       
-        $('#bodydiv').css('visibility', 'visible');
+        $('#menubar').css('visibility', 'hidden');
+        e1.slideUp( "fast", function() {
+    // Animation complete.
+    $('#bodydiv').css('visibility', 'visible');
         $('#loading').css('visibility', 'hidden');
+        $('#menubar').css('visibility', 'visible');
+        myFunctionhomess();
+
+  });;
+       
+        
     }
 </script>
 
