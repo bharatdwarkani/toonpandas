@@ -1,5 +1,5 @@
-
 <html>
+
 <head>
     <link rel="stylesheet" type="text/css" href="homepagefilesss.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -29,9 +29,6 @@
             margin: 55px 0 35px;
         }
 
-        a {
-        }
-
         .carousel-inner {
             margin: auto;
             width: 90%;
@@ -41,33 +38,31 @@
             width: 4%;
         }
 
-            .carousel-control.left,
-            .carousel-control.right {
-                background-image: none;
-            }
+        .carousel-control.left,
+        .carousel-control.right {
+            background-image: none;
+        }
 
-            .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
-                margin-top: -10px;
-                margin-left: -10px;
-                color: #444;
-            }
+        .glyphicon-chevron-left,
+        .carousel-control .glyphicon-chevron-right {
+            margin-top: -10px;
+            margin-left: -10px;
+            color: #444;
+        }
 
-        .carousel-inner {
-            a
+        .carousel-inner a {
 
-        {
             display: table-cell;
             height: 130px;
             width: 130px;
             vertical-align: middle;
+
         }
 
-        img {
+        .carousel-inner a {
             max-height: 150px;
             margin: auto auto;
             max-width: 100%;
-        }
-
         }
 
         img {
@@ -75,48 +70,48 @@
         }
 
         @media (max-width: 767px) {
-            .carousel-inner > .item.next,
-            .carousel-inner > .item.active.right {
+            .carousel-inner>.item.next,
+            .carousel-inner>.item.active.right {
                 left: 0;
                 -webkit-transform: translate3d(100%, 0, 0);
                 transform: translate3d(100%, 0, 0);
             }
 
-            .carousel-inner > .item.prev,
-            .carousel-inner > .item.active.left {
+            .carousel-inner>.item.prev,
+            .carousel-inner>.item.active.left {
                 left: 0;
                 -webkit-transform: translate3d(-100%, 0, 0);
                 transform: translate3d(-100%, 0, 0);
             }
         }
 
-        @media (min-width: 767px) and (max-width: 992px ) {
-            .carousel-inner > .item.next,
-            .carousel-inner > .item.active.right {
+        @media (min-width: 767px) and (max-width: 992px) {
+            .carousel-inner>.item.next,
+            .carousel-inner>.item.active.right {
                 left: 0;
                 -webkit-transform: translate3d(50%, 0, 0);
                 transform: translate3d(50%, 0, 0);
             }
 
-            .carousel-inner > .item.prev,
-            .carousel-inner > .item.active.left {
+            .carousel-inner>.item.prev,
+            .carousel-inner>.item.active.left {
                 left: 0;
                 -webkit-transform: translate3d(-50%, 0, 0);
                 transform: translate3d(-50%, 0, 0);
             }
         }
 
-        @media (min-width: 992px ) {
+        @media (min-width: 992px) {
 
-            .carousel-inner > .item.next,
-            .carousel-inner > .item.active.right {
+            .carousel-inner>.item.next,
+            .carousel-inner>.item.active.right {
                 left: 0;
                 -webkit-transform: translate3d(16.7%, 0, 0);
                 transform: translate3d(16.7%, 0, 0);
             }
 
-            .carousel-inner > .item.prev,
-            .carousel-inner > .item.active.left {
+            .carousel-inner>.item.prev,
+            .carousel-inner>.item.active.left {
                 left: 0;
                 -webkit-transform: translate3d(-16.7%, 0, 0);
                 transform: translate3d(-16.7%, 0, 0);
@@ -134,58 +129,101 @@
             background: white;
         }
 
-            .static:hover {
-                opacity: 0;
-            }
+        .static:hover {
+            opacity: 0;
+        }
     </style>
 
     <title>ToonPandas</title>
 </head>
 
-<body class="" style="position: relative; ">
 
-    <div class="" id="loading" >
-        <div class=" col-xs-12" >
 
-            <IMG id="pandaloader" class="fadeInDown animated"  SRC="images/toon.gif" style="position: absolute;width: 100%;padding: 0px;margin: 0px" onclick="myFunction()">
+
+
+<body class="hidden-sm hidden-md" style="position: relative; ">
+
+    <div class="hidden-sm hidden-md" id="loading">
+        <div class="hidden-sm hidden-md col-xs-12">
+
+            <IMG id="pandaloader" class="hidden-sm hidden-md fadeInDown animated" SRC="images/toon.gif" style="position: absolute;width: 100%;padding: 0px;margin: 0px"
+                onclick="myFunction()">
             </IMG>
-            
         </div>
     </div>
-    <div id="bodydiv"  >
-        <div class="topnav" style="text-align: center;" class="col-lg-12 hidden-sm hidden-md">
-            <div class="col-lg-12 hidden-sm hidden-md" style="margin-top: 10px;margin-bottom: 10px;" id="menubar">
+    <div id="bodydiv" class="hidden-sm hidden-md">
+
+        <div class="hidden-lg col-xs-12 topnav " style="text-align: center;margin-top:100px" class="col-lg-12 hidden-sm hidden-md">
+            <div class="hidden-lg col-xs-12" style="margin-top: 10px;margin-bottom: 10px;" id="menubar">
+
+                <div class="col-xs-12">
+                    <a style="text-decoration: none;" class="col-xs-6">
+                        <IMG class="static aboout" SRC="menu/about.jpg" id="aboutimage" style="height: 100px;width: 100px;padding: 0px;margin: 10px"
+                            onclick="myFunctionhomess()">
+                        <IMG class="active" SRC="menu/about-hover.jpg" style="height: 100px;width: 100px;padding: 0px;margin: 10px" onclick="myFunctionhomess()">
+                    </a>
+                    <a style="text-decoration: none" class="col-xs-6">
+                        <IMG class="static" SRC="menu/portfolio.jpg" id="portimage" style="height: 100px;width: 100px;padding: 0px;margin: 10px" onclick="myFunctionportfolio()">
+                        <IMG class="active" SRC="menu/portfolio-hover.jpg" style="height: 100px;width: 100px;padding: 0px;margin: 10px" onclick="myFunctionportfolio()">
+                    </a>
+                </div>
+
+                <div class="col-xs-12">
+                    <a style="text-decoration: none" class="col-xs-6">
+                        <IMG class="static" SRC="menu/services.jpg" id="servicepage" style="height: 100px;width: 100px;padding: 0px;margin: 10px" onclick="myFunctionservices()">
+                        <IMG class="active" SRC="menu/services-hover.jpg" style="height: 100px;width: 100px;padding: 0px;margin: 10px" onclick="myFunctionservices()">
+                    </a>
+
+
+                    <a style="text-decoration: none" class="col-xs-6">
+                        <IMG class="static" SRC="menu/team.jpg" id="teampage" style="height: 100px;width: 100px;padding: 0px;margin: 10px" onclick="teamClick()">
+
+                        <IMG class="active" SRC="menu/team-hover-.jpg" style="height: 100px;width: 100px;padding: 0px;margin: 10px" onclick="teamClick()">
+
+                    </a>
+
+                </div>
+                <div class="col-xs-12">
+                    <a style="text-decoration: none" class="col-xs-6">
+                        <IMG class="static" SRC="menu/lab.jpg" id="labpage" style="height: 100px;width: 100px;padding: 0px;margin: 10px" onclick="labClick()">
+
+                        <IMG class="active" SRC="menu/lab-hover.jpg" style="height: 100px;width: 100px;padding: 0px;margin: 10px" onclick="labClick()">
+
+                    </a>
+
+                    <a style="text-decoration: none" class="col-xs-6">
+                        <IMG class="static" SRC="menu/contact.jpg" id="contactpage" style="height: 100px;width: 100px;padding: 0px;margin: 10px" onclick="contactClick()">
+
+                        <IMG class="active" SRC="menu/contact-hover.jpg" style="height: 100px;width: 100px;padding: 0px;margin: 10px" onclick="contactClick()">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class=" hidden-xs hidden-sm hidden-md col-lg-12 topnav " style="text-align: center;" class="col-lg-12 hidden-sm hidden-md">
+            <div class="col-lg-12" style="margin-top: 10px;margin-bottom: 10px;" id="menubar">
 
                 <a style="text-decoration: none;">
 
-                    <IMG class="static aboout" SRC="menu/about.jpg" id="aboutimage" style="height: 75px;width: 75px;padding: 0px;margin: 10px" onclick="myFunctionhomess()">
+                    <IMG class="static aboout" SRC="menu/about.jpg" id="aboutimage" style="height: 75px;width: 75px;padding: 0px;margin: 10px"
+                        onclick="myFunctionhomess()">
 
                     <IMG class="active" SRC="menu/about-hover.jpg" style="height: 75px;width: 75px;padding: 0px;margin: 10px" onclick="myFunctionhomess()">
 
-                </a>`
+                </a>
 
 
 
 
                 <a style="text-decoration: none">
                     <IMG class="static" SRC="menu/portfolio.jpg" id="portimage" style="height: 75px;width: 75px;padding: 0px;margin: 10px" onclick="myFunctionportfolio()">
-
                     <IMG class="active" SRC="menu/portfolio-hover.jpg" style="height: 75px;width: 75px;padding: 0px;margin: 10px" onclick="myFunctionportfolio()">
-
                 </a>
-
-
-
                 <a style="text-decoration: none">
                     <IMG class="static" SRC="menu/services.jpg" id="servicepage" style="height: 75px;padding: 0px;margin: 10px" onclick="myFunctionservices()">
-
                     <IMG class="active" SRC="menu/services-hover.jpg" style="height: 75px;padding: 0px;margin: 10px" onclick="myFunctionservices()">
-
                 </a>
-
-
-
-
                 <a class="active " href="#home" style="text-decoration: none">
                     <IMG class="animated  fadeInUp " SRC="iconss/panda.jpg" style="height: 110px;width: 110px;padding: 0px;margin: 10px" onclick="myFunctionhome()">
                 </a>
@@ -211,19 +249,18 @@
                     <IMG class="static" SRC="menu/contact.jpg" id="contactpage" style="height: 75px;width: 75px;padding: 0px;margin: 10px" onclick="contactClick()">
 
                     <IMG class="active" SRC="menu/contact-hover.jpg" style="height: 75px;width: 75px;padding: 0px;margin: 10px" onclick="contactClick()">
-
                 </a>
-
-
-
-
-
             </div>
 
-            <div id="homepage" class="col-lg-12  hidden-sm hidden-md animated  fadeInDown   ">
+
+
+
+
+            <div id="homepage" class="  col-lg-12  hidden-sm hidden-md  animated  fadeInDown   ">
 
                 <div class="col-lg-12  hidden-sm hidden-md  " style="margin-top: 30px;font-size: 30px;">
-                    FRESH PIXELS MADE DAILY,<font color="#00BFA5"> THE BEST WAY.</font>
+                    FRESH PIXELS MADE DAILY,
+                    <font color="#00BFA5"> THE BEST WAY.</font>
                 </div>
                 <div class="col-lg-12  hidden-sm hidden-md  " style="margin-top: 30px;font-size: 17px;">
                     ToonPandas is a digital media production house in Bangalore.
@@ -237,126 +274,217 @@
             </div>
 
 
-<style>
-    #myCarousel {
-        padding: 0 10px 30px 10px;
-        margin-top: 30px;
-        text-align: center;
-    }
-        /* indicator position */
-        #myCarousel .carousel-indicators {
-            right: 50%;
-            top: auto;
-            bottom: -10px;
-            margin-right: -19px;
-        }
-            /* indicator color */
-            #myCarousel .carousel-indicators li {
-                background: #c0c0c0;
-            }
-            /* active indicator */
-            #myCarousel .carousel-indicators .active {
-                background: #333333;
-                height: 10px;
-                width: 10px;
-                margin-bottom: 1px;
-            }
-</style>
+            <style>
+                #myCarousel {
+                    padding: 0 10px 30px 10px;
+                    margin-top: 30px;
+                    text-align: center;
+                }
 
-            <div id="homepagebase" style="animation-delay: 1s;" class="col-lg-12  hidden-sm hidden-md animated  fadeIn  ">
+                /* indicator position */
+
+                #myCarousel .carousel-indicators {
+                    right: 50%;
+                    top: auto;
+                    bottom: -10px;
+                    margin-right: -19px;
+                }
+
+                /* indicator color */
+
+                #myCarousel .carousel-indicators li {
+                    background: #c0c0c0;
+                }
+
+                /* active indicator */
+
+                #myCarousel .carousel-indicators .active {
+                    background: #333333;
+                    height: 10px;
+                    width: 10px;
+                    margin-bottom: 1px;
+                }
+            </style>
+
+            <div id="homepagebase" style="animation-delay: 1s;" class=" col-lg-12  hidden-sm hidden-md animated  fadeIn  ">
 
                 <div class="col-md-10 col-md-offset-1" style="margin-top: 30px;" style="animation-delay: 4s;">
-                  <ol class="carousel-indicators" style="margin-bottom:-60px">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active" style="background :#D3D3D3"></li>
-                            <li data-target="#myCarousel" data-slide-to="1" style="background :#D3D3D3"></li>
-                            <li data-target="#myCarousel" data-slide-to="2" style="background :#D3D3D3"></li>
-                            <li data-target="#myCarousel" data-slide-to="3" style="background :#D3D3D3"></li>
-                        </ol>
+                    <ol class="carousel-indicators" style="margin-bottom:-60px">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active" style="background :#D3D3D3"></li>
+                        <li data-target="#myCarousel" data-slide-to="1" style="background :#D3D3D3"></li>
+                        <li data-target="#myCarousel" data-slide-to="2" style="background :#D3D3D3"></li>
+                        <li data-target="#myCarousel" data-slide-to="3" style="background :#D3D3D3"></li>
+                    </ol>
                     <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="2000" id="myCarousel" style="margin-top:30px">
-                        
+
                         <div class="carousel-inner">
                             <div class="item active">
                                 <div class="col-md-2 col-sm-6 col-xs-12">
                                     <a href="#">
-                                        <img src="https://drive.google.com/uc?id=1RRDeByf6Pt5OJHxcdPaO_ZIgH4XxbOpZ" onclick="alert('S');" style="width: 110px;height: 110px;" class="img-responsive">
+                                        <img src="https://drive.google.com/uc?id=1RRDeByf6Pt5OJHxcdPaO_ZIgH4XxbOpZ" onclick="alert('S');" style="width: 110px;height: 110px;"
+                                            class="img-responsive">
                                     </a>
                                 </div>
                             </div>
                             <div class="item">
-                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1TcDCWg7jFAbvA12aVVrNU5XEIvgt2vMA" style="width: 110px;height: 110px;" class="img-responsive"></a></div>
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <img src="https://drive.google.com/uc?id=1TcDCWg7jFAbvA12aVVrNU5XEIvgt2vMA" style="width: 110px;height: 110px;" class="img-responsive">
+                                    </a>
+                                </div>
 
                             </div>
 
                             <div class="item">
-                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1435vG1h9xEsGJmVtnH1VYnAKu-zO_W6W" style="width: 110px;height: 110px;" class="img-responsive"></a></div>
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <img src="https://drive.google.com/uc?id=1435vG1h9xEsGJmVtnH1VYnAKu-zO_W6W" style="width: 110px;height: 110px;" class="img-responsive">
+                                    </a>
+                                </div>
                             </div>
 
                             <div class="item">
-                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1Xb6qTSAe5Kz4OQG2GyuAYlDBt-Lz8AOj" style="width: 110px;height: 110px;" class="img-responsive"></a></div>
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <img src="https://drive.google.com/uc?id=1Xb6qTSAe5Kz4OQG2GyuAYlDBt-Lz8AOj" style="width: 110px;height: 110px;" class="img-responsive">
+                                    </a>
+                                </div>
                             </div>
 
                             <div class="item">
-                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1CNjJM7iKT7PvpDnfm_VbgRZFt7rvQnbA" style="width: 110px;height: 110px;" class="img-responsive"></a></div>
-                            </div>
-
-
-
-                            <div class="item">
-                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1B8oFbpJvFAFmWqAhOaI-QbzLaqW_t_2J" style="width: 110px;height: 110px;" class="img-responsive"></a></div>
-                            </div>
-
-
-                            <div class="item">
-                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1AR4elICQtSaQXbhF0AU0A3EAKaiZYAmR" style="width: 110px;height: 110px;" class="img-responsive"></a></div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1j4E78i-ZRRQgnAQ7fskG88mZEHh6iRyR" style="width: 110px;height: 110px;" class="img-responsive"></a></div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1hXYASbJZX1L1LceIWDylHRCte3a7BRdT" style="width: 110px;height: 110px;" class="img-responsive"></a></div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1bEktTEiqC_yPW__FO0mMz3VOf1aB2Ggi" style="width: 110px;height: 110px;" class="img-responsive"></a></div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1r4C1S-ee3zCOyFIXHZbDGuPzkaADtaMW" style="width: 110px;height: 110px;" class="img-responsive"></a></div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1EpuakI9vRrZnHzcPQFFJE4w3VjImoqx8" style="width: 110px;height: 110px;" class="img-responsive"></a></div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1EjUPdEHQRK3ePfVz954_2YfuIe-S8RH3" style="width: 110px;height: 110px;" class="img-responsive"></a></div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1Xmqb0fZcBpGqyyHSMTsI5QRjj6pnQUXr" style="width: 110px;height: 110px;" class="img-responsive"></a></div>
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <img src="https://drive.google.com/uc?id=1CNjJM7iKT7PvpDnfm_VbgRZFt7rvQnbA" style="width: 110px;height: 110px;" class="img-responsive">
+                                    </a>
+                                </div>
                             </div>
 
 
 
                             <div class="item">
-                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1qCPkq-fQoyUtJtpKFIEsZK34TYJzaegP" style="width: 110px;height: 110px;" class="img-responsive"></a></div>
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <img src="https://drive.google.com/uc?id=1B8oFbpJvFAFmWqAhOaI-QbzLaqW_t_2J" style="width: 110px;height: 110px;" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <img src="https://drive.google.com/uc?id=1AR4elICQtSaQXbhF0AU0A3EAKaiZYAmR" style="width: 110px;height: 110px;" class="img-responsive">
+                                    </a>
+                                </div>
                             </div>
                             <div class="item">
-                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1sb3lOHZCivf4lO4YA_URlDRtDn2Ej-LO" style="width: 110px;height: 110px;" class="img-responsive"></a></div>
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <img src="https://drive.google.com/uc?id=1j4E78i-ZRRQgnAQ7fskG88mZEHh6iRyR" style="width: 110px;height: 110px;" class="img-responsive">
+                                    </a>
+                                </div>
                             </div>
                             <div class="item">
-                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1gSBApFlmFdPZgfAAS0jZOgEfmMphKKtk" style="width: 110px;height: 110px;" class="img-responsive"></a></div>
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <img src="https://drive.google.com/uc?id=1hXYASbJZX1L1LceIWDylHRCte3a7BRdT" style="width: 110px;height: 110px;" class="img-responsive">
+                                    </a>
+                                </div>
                             </div>
                             <div class="item">
-                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1Ug6pVDMQH3HDMI73EfbvYXnOS9MPKcrz" style="width: 110px;height: 110px;" class="img-responsive"></a></div>
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <img src="https://drive.google.com/uc?id=1bEktTEiqC_yPW__FO0mMz3VOf1aB2Ggi" style="width: 110px;height: 110px;" class="img-responsive">
+                                    </a>
+                                </div>
                             </div>
                             <div class="item">
-                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1oBJJKk-2nPAJAYIV0HQtZvj7yKlSACjF" style="width: 110px;height: 110px;" class="img-responsive"></a></div>
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <img src="https://drive.google.com/uc?id=1r4C1S-ee3zCOyFIXHZbDGuPzkaADtaMW" style="width: 110px;height: 110px;" class="img-responsive">
+                                    </a>
+                                </div>
                             </div>
                             <div class="item">
-                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1QpKQUCtl1RkoFhi1gGCSGb_C7-XavrEE" style="width: 110px;height: 110px;" class="img-responsive"></a></div>
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <img src="https://drive.google.com/uc?id=1EpuakI9vRrZnHzcPQFFJE4w3VjImoqx8" style="width: 110px;height: 110px;" class="img-responsive">
+                                    </a>
+                                </div>
                             </div>
                             <div class="item">
-                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1q0-fuuDifD0V2qX8iUzF52ykol2zHEu3" style="width: 110px;height: 110px;" class="img-responsive"></a></div>
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <img src="https://drive.google.com/uc?id=1EjUPdEHQRK3ePfVz954_2YfuIe-S8RH3" style="width: 110px;height: 110px;" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <img src="https://drive.google.com/uc?id=1Xmqb0fZcBpGqyyHSMTsI5QRjj6pnQUXr" style="width: 110px;height: 110px;" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+
+
+
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <img src="https://drive.google.com/uc?id=1qCPkq-fQoyUtJtpKFIEsZK34TYJzaegP" style="width: 110px;height: 110px;" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <img src="https://drive.google.com/uc?id=1sb3lOHZCivf4lO4YA_URlDRtDn2Ej-LO" style="width: 110px;height: 110px;" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <img src="https://drive.google.com/uc?id=1gSBApFlmFdPZgfAAS0jZOgEfmMphKKtk" style="width: 110px;height: 110px;" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <img src="https://drive.google.com/uc?id=1Ug6pVDMQH3HDMI73EfbvYXnOS9MPKcrz" style="width: 110px;height: 110px;" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <img src="https://drive.google.com/uc?id=1oBJJKk-2nPAJAYIV0HQtZvj7yKlSACjF" style="width: 110px;height: 110px;" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <img src="https://drive.google.com/uc?id=1QpKQUCtl1RkoFhi1gGCSGb_C7-XavrEE" style="width: 110px;height: 110px;" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <img src="https://drive.google.com/uc?id=1q0-fuuDifD0V2qX8iUzF52ykol2zHEu3" style="width: 110px;height: 110px;" class="img-responsive">
+                                    </a>
+                                </div>
                             </div>
 
                             <div class="item">
-                                <div class="col-md-2 col-sm-6 col-xs-12"><a href="#"><img src="https://drive.google.com/uc?id=1g3umZNj6Y3rgyBND4Z6WNDZLt6oh9XA8" style="width: 110px;height: 110px;" class="img-responsive"></a></div>
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <img src="https://drive.google.com/uc?id=1g3umZNj6Y3rgyBND4Z6WNDZLt6oh9XA8" style="width: 110px;height: 110px;" class="img-responsive">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -379,9 +507,9 @@
                 <font color="#00BFA5">HAVE A LOOK AT WHAT WE DO.</font>
             </div>
             <div class="col-lg-12  hidden-sm hidden-md  " style="margin-top: 5px;font-size: 15px;text-align: center;">
-                <a style="text-decoration: none;color: #000000">2D Animation  &nbsp;&nbsp;&nbsp; |</a>
+                <a style="text-decoration: none;color: #000000">2D Animation &nbsp;&nbsp;&nbsp; |</a>
                 <a style="text-decoration: none;color: #000000">&nbsp;&nbsp;&nbsp;3D Animation&nbsp;&nbsp;&nbsp;|</a>
-                <a style="text-decoration: none;color: #000000">&nbsp;&nbsp;&nbsp;Live Action &nbsp;&nbsp;&nbsp;    |</a>
+                <a style="text-decoration: none;color: #000000">&nbsp;&nbsp;&nbsp;Live Action &nbsp;&nbsp;&nbsp; |</a>
                 <a style="text-decoration: none;color: #000000">&nbsp;&nbsp;&nbsp;Branding&nbsp;&nbsp;&nbsp; |</a>
                 <a style="text-decoration: none;color: #000000">&nbsp;&nbsp;&nbsp;UI & UX&nbsp;&nbsp;&nbsp; |</a>
                 <a style="text-decoration: none;color: #000000">&nbsp;&nbsp;&nbsp;WEB </a>
@@ -392,25 +520,17 @@
                         <div class="carousel-inner">
                             <div class="item active">
                                 <div class="col-md-2 col-sm-6 col-xs-12">
-                                     <a href="#">
+                                    <a href="#">
                                         <div style="padding:10px">
-                                             <button style="width:130px;height:130px;background:url('services/3hover.jpg')" src="services/3hover.jpg" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button>
+                                            <button style="width:130px;height:130px;background:url('services/3hover.jpg')" src="services/3hover.jpg" class="btn btn-info btn-lg"
+                                                data-toggle="modal" data-target="#myModal" frameborder="0" allow="autoplay; encrypted-media"
+                                                allowfullscreen></button>
                                         </div>
                                         <div style="padding:10px">
-                                            <button style="width:130px;height:130px;background:url('services/3hover.jpg')" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" src="services/3hover.jpg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button>
-                                      </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-2 col-sm-6 col-xs-12">
-                                     <a href="#">
-                                        <div style="padding:10px">
-                                             <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="width:130px;height:130px;background:url('services/3hover.jpg')" src="services/3hover.jpg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button>
+                                            <button style="width:130px;height:130px;background:url('services/3hover.jpg')" class="btn btn-info btn-lg" data-toggle="modal"
+                                                data-target="#myModal" src="services/3hover.jpg" frameborder="0" allow="autoplay; encrypted-media"
+                                                allowfullscreen></button>
                                         </div>
-                                        <div style="padding:10px">
-                                            <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="width:130px;height:130px;background:url('services/3hover.jpg')" src="services/3hover.jpg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button>
-                                      </div>
                                     </a>
                                 </div>
                             </div>
@@ -418,76 +538,107 @@
                                 <div class="col-md-2 col-sm-6 col-xs-12">
                                     <a href="#">
                                         <div style="padding:10px">
-                                             <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="width:130px;height:130px;background:url('services/3hover.jpg')" src="services/3hover.jpg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button>
+                                            <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="width:130px;height:130px;background:url('services/3hover.jpg')"
+                                                src="services/3hover.jpg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button>
                                         </div>
                                         <div style="padding:10px">
-                                            <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="width:130px;height:130px;background:url('services/3hover.jpg')" src="services/3hover.jpg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button>
-                                      </div>
+                                            <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="width:130px;height:130px;background:url('services/3hover.jpg')"
+                                                src="services/3hover.jpg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <a href="#">
+                                        <div style="padding:10px">
+                                            <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="width:130px;height:130px;background:url('services/3hover.jpg')"
+                                                src="services/3hover.jpg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button>
+                                        </div>
+                                        <div style="padding:10px">
+                                            <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="width:130px;height:130px;background:url('services/3hover.jpg')"
+                                                src="services/3hover.jpg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
 
                             <div class="item">
                                 <div class="col-md-2 col-sm-6 col-xs-12">
-                                      <a href="#">
+                                    <a href="#">
                                         <div style="padding:10px">
-                                             <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="width:130px;height:130px;background:url('services/3hover.jpg')" src="services/3hover.jpg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button>
+                                            <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="width:130px;height:130px;background:url('services/3hover.jpg')"
+                                                src="services/3hover.jpg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button>
                                         </div>
                                         <div style="padding:10px">
-                                            <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="width:130px;height:130px;background:url('services/3hover.jpg')" src="services/3hover.jpg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button>
-                                      </div>
+                                            <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="width:130px;height:130px;background:url('services/3hover.jpg')"
+                                                src="services/3hover.jpg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></button>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                        <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <i class="glyphicon glyphicon-chevron-left"></i>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <i class="glyphicon glyphicon-chevron-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-			<!-- Modal -->
-<div id="myModal" style="margin-top:120px" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+            <!-- Modal -->
+            <div id="myModal" style="margin-top:120px" class="modal fade" role="dialog">
+                <div class="modal-dialog">
 
-    <!-- Modal content-->
-    <div class="modal-content">
+                    <!-- Modal content-->
+                    <div class="modal-content">
 
-      <div class="modal-body">
-        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/nv21Xz8yudU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
-      </div>
+                        <div class="modal-body">
+                            <p>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/nv21Xz8yudU" frameborder="0" allow="autoplay; encrypted-media"
+                                    allowfullscreen></iframe>
+                            </p>
+                        </div>
 
-    </div>
+                    </div>
 
-  </div>
-</div>
-<style>
-    #quote-carousel {
-        padding: 0 10px 30px 10px;
-        margin-top: 30px;
-        text-align: center;
-    }
-        /* indicator position */
-        #quote-carousel .carousel-indicators {
-            right: 50%;
-            top: auto;
-            bottom: -10px;
-            margin-right: -19px;
-        }
-            /* indicator color */
-            #quote-carousel .carousel-indicators li {
-                background: #c0c0c0;
-            }
-            /* active indicator */
-            #quote-carousel .carousel-indicators .active {
-                background: #333333;
-                height: 10px;
-                width: 10px;
-                margin-bottom: 1px;
-            }
-</style>
-    <div class="col-xs-12" style="text-align:center;margin-top:20px">    
-    <h1>Testimonials</h1>
-    </div>
+                </div>
+            </div>
+            <style>
+                #quote-carousel {
+                    padding: 0 10px 30px 10px;
+                    margin-top: 30px;
+                    text-align: center;
+                }
+
+                /* indicator position */
+
+                #quote-carousel .carousel-indicators {
+                    right: 50%;
+                    top: auto;
+                    bottom: -10px;
+                    margin-right: -19px;
+                }
+
+                /* indicator color */
+
+                #quote-carousel .carousel-indicators li {
+                    background: #c0c0c0;
+                }
+
+                /* active indicator */
+
+                #quote-carousel .carousel-indicators .active {
+                    background: #333333;
+                    height: 10px;
+                    width: 10px;
+                    margin-bottom: 1px;
+                }
+            </style>
+            <div class="col-xs-12" style="text-align:center;margin-top:20px">
+                <h1>Testimonials</h1>
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -507,8 +658,14 @@
                                 <div class="item active">
                                     <div class="row">
                                         <div class="col-sm-12">
-                                            <p>&ldquo;chetan dwarkani chetan dwarkani chetan dwarkanichetan dwarkani chetan dwarkanichetan dwarkani chetan dwarkani chetan dwarkanichetan dwarkani chetan dwarkanichetan dwarkani chetan dwarkani chetan dwarkanichetan dwarkani chetan dwarkani.&rdquo;</p>
-                                            <small><strong>Fd., Vulputate Sit</strong></small>
+                                            <p>&ldquo;chetan dwarkani chetan dwarkani chetan dwarkanichetan dwarkani chetan
+                                                dwarkanichetan dwarkani chetan dwarkani chetan dwarkanichetan dwarkani chetan
+                                                dwarkanichetan dwarkani chetan dwarkani chetan dwarkanichetan dwarkani chetan
+                                                dwarkani.&rdquo;
+                                            </p>
+                                            <small>
+                                                <strong>Fd., Vulputate Sit</strong>
+                                            </small>
                                         </div>
                                     </div>
                                 </div>
@@ -517,8 +674,14 @@
                                 <div class="item">
                                     <div class="row">
                                         <div class="col-sm-12">
-                                            <p>&ldquo;chetan dwarkani chetan dwarkani chetan dwarkanichetan dwarkani chetan dwarkanichetan dwarkani chetan dwarkani chetan dwarkanichetan dwarkani chetan dwarkanichetan dwarkani chetan dwarkani chetan dwarkanichetan dwarkani chetan dwarkani.&rdquo;</p>
-                                            <small><strong>Fd., Vulputate Sit</strong></small>
+                                            <p>&ldquo;chetan dwarkani chetan dwarkani chetan dwarkanichetan dwarkani chetan
+                                                dwarkanichetan dwarkani chetan dwarkani chetan dwarkanichetan dwarkani chetan
+                                                dwarkanichetan dwarkani chetan dwarkani chetan dwarkanichetan dwarkani chetan
+                                                dwarkani.&rdquo;
+                                            </p>
+                                            <small>
+                                                <strong>Fd., Vulputate Sit</strong>
+                                            </small>
                                         </div>
                                     </div>
                                 </div>
@@ -527,8 +690,14 @@
                                 <div class="item">
                                     <div class="row">
                                         <div class="col-sm-12">
-                                            <p>&ldquo;chetan dwarkani chetan dwarkani chetan dwarkanichetan dwarkani chetan dwarkanichetan dwarkani chetan dwarkani chetan dwarkanichetan dwarkani chetan dwarkanichetan dwarkani chetan dwarkani chetan dwarkanichetan dwarkani chetan dwarkani.&rdquo;</p>
-                                            <small><strong>Fd., Vulputate Sit</strong></small>
+                                            <p>&ldquo;chetan dwarkani chetan dwarkani chetan dwarkanichetan dwarkani chetan
+                                                dwarkanichetan dwarkani chetan dwarkani chetan dwarkanichetan dwarkani chetan
+                                                dwarkanichetan dwarkani chetan dwarkani chetan dwarkanichetan dwarkani chetan
+                                                dwarkani.&rdquo;
+                                            </p>
+                                            <small>
+                                                <strong>Fd., Vulputate Sit</strong>
+                                            </small>
                                         </div>
                                     </div>
                                 </div>
@@ -554,732 +723,803 @@
 
 
 
-                <div id="services" class="col-lg-12  hidden-sm hidden-md  ">
-                    <div class="col-lg-12  hidden-sm hidden-md fadeInRight animated " style="margin-top: 2px;font-size: 15px;text-align: center;">
-                        <font color="#00BFA5"><b>OUR INCREDIBLE SERVICES</b></font>
-                    </div>
-                    <style type="text/css">
-                        .center {
-                            margin: auto;
-                            border: 3px solid black;
-                            padding: 10px;
-                        }
-                    </style>
+        <div id="services" class="col-lg-12  hidden-sm hidden-md  ">
+            <div class="col-lg-12  hidden-sm hidden-md fadeInRight animated " style="margin-top: 2px;font-size: 15px;text-align: center;">
+                <font color="#00BFA5">
+                    <b>OUR INCREDIBLE SERVICES</b>
+                </font>
+            </div>
+            <style type="text/css">
+                .center {
+                    margin: auto;
+                    border: 3px solid black;
+                    padding: 10px;
+                }
+            </style>
 
-                    <div class="table-responsive   " style="margin-top: 35px;text-align: center;">
-                        <table class="center  animated fadeInRight" style="table-layout: center;border-width: 2px">
-
-
-                            <tbody>
-                                <tr>
-
-                                    <td style="width: 150px;border:solid 2px" class="">
-                                        <a style="text-decoration: none">
-                                            <div style="margin-left:10px;">
-                                                <IMG class="static" SRC="services/1hover.jpg" style="width: 130px;padding: 15px;" onclick="myFunction()">
-                                                <IMG class="active" SRC="services/1.gif" style="width: 130px;padding: 15px;" onclick="myFunction()">
-                                            </div>
-                                            <div style="text-align:center;font-size:12px;margin-bottom:14px;text-decoration-color:#000000">
-                                                <font color="#000"><b>ANIMATED<br />EXPLAINERS</b></font>
-                                            </div>
-                                        </a>
-                                    </td>
+            <div class="table-responsive   " style="margin-top: 35px;text-align: center;">
+                <table class="center  animated fadeInRight" style="table-layout: center;border-width: 2px">
 
 
-                                    <td style="width: 150px;;border:solid 2px" class="">
-                                        <a style="text-decoration: none">
-                                            <div style="margin-left:10px;">
-                                                <IMG class="static" SRC="services/2hover.jpg" style="width: 130px;padding: 15px;" onclick="myFunction()">
-                                                <IMG class="active" SRC="services/2.gif" style="width: 130px;padding: 15px;" onclick="myFunction()">
-                                            </div>
-                                            <div style="text-align:center;font-size:12px;margin-bottom:14px;text-decoration-color:#000000">
-                                                <font color="#000"> <b>LIVE ACTION<br />VIDEOS</b></font>
-                                            </div>
-                                        </a>
-                                    </td>
+                    <tbody>
+                        <tr>
+
+                            <td style="width: 150px;border:solid 2px" class="">
+                                <a style="text-decoration: none">
+                                    <div style="margin-left:10px;">
+                                        <IMG class="static" SRC="services/1hover.jpg" style="width: 130px;padding: 15px;" onclick="myFunction()">
+                                        <IMG class="active" SRC="services/1.gif" style="width: 130px;padding: 15px;" onclick="myFunction()">
+                                    </div>
+                                    <div style="text-align:center;font-size:12px;margin-bottom:14px;text-decoration-color:#000000">
+                                        <font color="#000">
+                                            <b>ANIMATED
+                                                <br />EXPLAINERS</b>
+                                        </font>
+                                    </div>
+                                </a>
+                            </td>
 
 
-                                    <td style="width: 150px;;border:solid 2px" class="">
-                                        <a style="text-decoration: none">
-                                            <div style="margin-left:10px">
-                                                <IMG class="static" SRC="services/3hover.jpg" style="width: 130px;padding: 15px;" onclick="myFunction()">
-                                                <IMG class="active" SRC="services/3.gif" style="width: 130px;padding: 15px;" onclick="myFunction()">
-                                            </div>
-                                            <div style="text-align:center;font-size:12px;margin-bottom:14px;text-decoration-color:#000000">
-                                                <font color="#000"> <b>WEB<br />DESIGN</b></font>
-                                            </div>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-
-                                    <td style="width: 150px;border:solid 2px;" class="">
-                                        <a style="text-decoration: none">
-                                            <div style="margin-left:10px;">
-                                                <IMG class="static" SRC="services/4hover.jpg" style="width: 130px;padding: 15px;" onclick="myFunction()">
-                                                <IMG class="active" SRC="services/4.gif" style="width: 130px;padding: 15px;" onclick="myFunction()">
-                                            </div>
-                                            <div style="text-align:center;font-size:12px;margin-bottom:14px;text-decoration-color:#000000">
-                                                <font color="#000">   <b>BRANDING &amp;<br />POSITIONING</b></font>
-                                            </div>
-                                        </a>
-                                    </td>
-                                    <td style="width: 150px;border:solid 2px;" class="">
-                                        <a style="text-decoration: none">
-                                            <div style="margin-left:10px">
-                                                <IMG class="static" SRC="services/5hover.jpg" style="width: 130px;padding: 15px;" onclick="myFunction()">
-                                                <IMG class="active" SRC="services/5.gif" style="width: 130px;padding: 15px;" onclick="myFunction()">
-                                            </div>
-                                            <div style="text-align:center;font-size:12px;margin-bottom:14px;text-decoration-color:#000000">
-                                                <font color="#000"><b style="text-decoration-color:#000000">USER<br />EXPERIENCE</b></font>
-                                            </div>
-                                        </a>
-                                    </td>
-                                    <td style="width: 150px;border:solid 2px;" class="">
-                                        <a style="text-decoration: none">
-                                            <div style="margin-left:10px">
-                                                <IMG class="static" SRC="services/6hover.jpg" style="width: 130px;padding: 15px;" onclick="myFunction()">
-                                                <IMG class="active" SRC="services/6.gif" style="width: 130px;padding: 15px;" onclick="myFunction()">
-                                            </div>
-                                            <div style="text-align:center;font-size:12px;margin-bottom:14px;text-decoration-color:#000000">
-                                                <font color="#000"><b>MARKETING<br />COMMUNICATION</b></font>
-                                            </div>
-                                        </a>
-                                    </td>
-                                </tr>
+                            <td style="width: 150px;;border:solid 2px" class="">
+                                <a style="text-decoration: none">
+                                    <div style="margin-left:10px;">
+                                        <IMG class="static" SRC="services/2hover.jpg" style="width: 130px;padding: 15px;" onclick="myFunction()">
+                                        <IMG class="active" SRC="services/2.gif" style="width: 130px;padding: 15px;" onclick="myFunction()">
+                                    </div>
+                                    <div style="text-align:center;font-size:12px;margin-bottom:14px;text-decoration-color:#000000">
+                                        <font color="#000">
+                                            <b>LIVE ACTION
+                                                <br />VIDEOS</b>
+                                        </font>
+                                    </div>
+                                </a>
+                            </td>
 
 
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                            <td style="width: 150px;;border:solid 2px" class="">
+                                <a style="text-decoration: none">
+                                    <div style="margin-left:10px">
+                                        <IMG class="static" SRC="services/3hover.jpg" style="width: 130px;padding: 15px;" onclick="myFunction()">
+                                        <IMG class="active" SRC="services/3.gif" style="width: 130px;padding: 15px;" onclick="myFunction()">
+                                    </div>
+                                    <div style="text-align:center;font-size:12px;margin-bottom:14px;text-decoration-color:#000000">
+                                        <font color="#000">
+                                            <b>WEB
+                                                <br />DESIGN</b>
+                                        </font>
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
 
-                <style>
-                            .team-image-box {
-                                width: 220px;
-                                text-align: center;
-                            }
+                            <td style="width: 150px;border:solid 2px;" class="">
+                                <a style="text-decoration: none">
+                                    <div style="margin-left:10px;">
+                                        <IMG class="static" SRC="services/4hover.jpg" style="width: 130px;padding: 15px;" onclick="myFunction()">
+                                        <IMG class="active" SRC="services/4.gif" style="width: 130px;padding: 15px;" onclick="myFunction()">
+                                    </div>
+                                    <div style="text-align:center;font-size:12px;margin-bottom:14px;text-decoration-color:#000000">
+                                        <font color="#000">
+                                            <b>BRANDING &amp;
+                                                <br />POSITIONING</b>
+                                        </font>
+                                    </div>
+                                </a>
+                            </td>
+                            <td style="width: 150px;border:solid 2px;" class="">
+                                <a style="text-decoration: none">
+                                    <div style="margin-left:10px">
+                                        <IMG class="static" SRC="services/5hover.jpg" style="width: 130px;padding: 15px;" onclick="myFunction()">
+                                        <IMG class="active" SRC="services/5.gif" style="width: 130px;padding: 15px;" onclick="myFunction()">
+                                    </div>
+                                    <div style="text-align:center;font-size:12px;margin-bottom:14px;text-decoration-color:#000000">
+                                        <font color="#000">
+                                            <b style="text-decoration-color:#000000">USER
+                                                <br />EXPERIENCE</b>
+                                        </font>
+                                    </div>
+                                </a>
+                            </td>
+                            <td style="width: 150px;border:solid 2px;" class="">
+                                <a style="text-decoration: none">
+                                    <div style="margin-left:10px">
+                                        <IMG class="static" SRC="services/6hover.jpg" style="width: 130px;padding: 15px;" onclick="myFunction()">
+                                        <IMG class="active" SRC="services/6.gif" style="width: 130px;padding: 15px;" onclick="myFunction()">
+                                    </div>
+                                    <div style="text-align:center;font-size:12px;margin-bottom:14px;text-decoration-color:#000000">
+                                        <font color="#000">
+                                            <b>MARKETING
+                                                <br />COMMUNICATION</b>
+                                        </font>
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
 
-                            .team-image {
-                                padding: 0px;
-                                height: 150px;
-                                padding-top: 10px;
-                            }
 
-                            .team-center {
-                                margin: auto;
-                                padding: 10px;
-                            }
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
-                            .team-designation {
-                                text-align: center;
-                                font-size: 12px;
-                                width: 154px;
-                                position: relative;
-                                left: 35px;
-                                border: 1px solid black;
-                            }
+        <style>
+            .team-image-box {
+                width: 220px;
+                text-align: center;
+            }
 
-                            .team-text {
-                                text-align: center;
-                                font-weight: bold;
-                            }
+            .team-image {
+                padding: 0px;
+                height: 150px;
+                padding-top: 10px;
+            }
 
-                            .btn-get-in-touch {
-                                background: #00BFA5 !important;
-                                color: black;
-                                border: 1px solid #00BFA5;
-                            }
+            .team-center {
+                margin: auto;
+                padding: 10px;
+            }
 
-                            .btn-primary.active, .btn-primary:active, .btn-primary:hover, .btn-primary:focus {
-                                background: black !important;
-                                color: #00BFA5 !important;
-                                border: 1px solid black;
-                            }
+            .team-designation {
+                text-align: center;
+                font-size: 12px;
+                width: 154px;
+                position: relative;
+                left: 35px;
+                border: 1px solid black;
+            }
+
+            .team-text {
+                text-align: center;
+                font-weight: bold;
+            }
+
+            .btn-get-in-touch {
+                background: #00BFA5 !important;
+                color: black;
+                border: 1px solid #00BFA5;
+            }
+
+            .btn-primary.active,
+            .btn-primary:active,
+            .btn-primary:hover,
+            .btn-primary:focus {
+                background: black !important;
+                color: #00BFA5 !important;
+                border: 1px solid black;
+            }
 
 
 
 
-                            /*#reaction-content-area {
+            /*#reaction-content-area {
                         width: 400px;
                         height: 400px;
                         padding:5px;
                         position: relative;
                         overflow: auto;
                     }*/
-                </style>
+        </style>
 
 
 
-                <div id="team" class="col-lg-12  hidden-sm hidden-md fadeInDown animated  ">
-                    <div class="col-lg-12  hidden-sm hidden-md fadeIn animated" style="margin-top: 2px;font-size: 15px;text-align: center;">
-                        <font color="#00BFA5"><b>THE PASSIONATE PANDAS</b></font>
-                    </div>
-                    <div class="table-responsive" style="margin-top: 30px;text-align: center;">
-                        <table class="team-center  animated fadeInRight" style="table-layout: center;border-width: 2px">
-                            <tbody>
-                                <tr>
-                                    <td class="team-image-box">
-                                        <img src="teamimages/1.jpg" class="team-image">
-                                        <div class="team-text">Harsha Bandaru</div>
-                                        <div class="team-designation">
-                                            <div>
-                                                Founder | Creative Director
-                                            </div>
-                                        </div>
-                                        <div style="margin-right:31px">
-                                            <div>
-                                                <div style="float:right;padding:2px;border: solid 2px">
-                                                    <IMG class="static" SRC="socialicons/1hover.jpg" style="width: 18px;height:18px">
-                                                    <IMG class="active" SRC="socialicons/1.jpg" style="width: 18px;height: 18px;">
-                                                </div>
-                                                <div style="float:right;padding:2px;border: solid 2px">
-                                                    <IMG class="static" SRC="socialicons/2hover.jpg" style="width: 18px;height:18px">
-                                                    <IMG class="active" SRC="socialicons/2.jpg" style="width: 18px;height: 18px;">
-                                                </div>
-                                                <div style="float:right;padding:2px;border: solid 2px">
-                                                    <IMG class="static" SRC="socialicons/3hover.jpg" style="width: 18px;height:18px">
-                                                    <IMG class="active" SRC="socialicons/3.jpg" style="width: 18px;height: 18px;">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-
-                                    <td class="team-image-box">
-                                        <img src="teamimages/2.jpg" class="team-image">
-                                        <div class="team-text">Vanitha Gaja</div>
-                                        <div class="team-designation">Chief Ideation Director</div>
-                                        <div style="margin-right:31px">
-                                            <div>
-                                                <div style="float:right;padding:2px;border: solid 2px">
-                                                    <IMG class="static" SRC="socialicons/1hover.jpg" style="width: 18px;height:18px">
-                                                    <IMG class="active" SRC="socialicons/1.jpg" style="width: 18px;height: 18px;">
-                                                </div>
-                                                <div style="float:right;padding:2px;border: solid 2px">
-                                                    <IMG class="static" SRC="socialicons/2hover.jpg" style="width: 18px;height:18px">
-                                                    <IMG class="active" SRC="socialicons/2.jpg" style="width: 18px;height: 18px;">
-                                                </div>
-                                                <div style="float:right;padding:2px;border: solid 2px">
-                                                    <IMG class="static" SRC="socialicons/3hover.jpg" style="width: 18px;height:18px">
-                                                    <IMG class="active" SRC="socialicons/3.jpg" style="width: 18px;height: 18px;">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="team-image-box">
-                                        <img src="teamimages/3.jpg" class="team-image">
-                                        <div class="team-text">Aakarsh Naidu</div>
-                                        <div class="team-designation">Mentor</div>
-                                        <div style="margin-right:31px">
-                                            <div>
-                                                <div style="float:right;padding:2px;border: solid 2px">
-                                                    <IMG class="static" SRC="socialicons/1hover.jpg" style="width: 18px;height:18px">
-                                                    <IMG class="active" SRC="socialicons/1.jpg" style="width: 18px;height: 18px;">
-                                                </div>
-                                                <div style="float:right;padding:2px;border: solid 2px">
-                                                    <IMG class="static" SRC="socialicons/2hover.jpg" style="width: 18px;height:18px">
-                                                    <IMG class="active" SRC="socialicons/2.jpg" style="width: 18px;height: 18px;">
-                                                </div>
-                                                <div style="float:right;padding:2px;border: solid 2px">
-                                                    <IMG class="static" SRC="socialicons/3hover.jpg" style="width: 18px;height:18px">
-                                                    <IMG class="active" SRC="socialicons/3.jpg" style="width: 18px;height: 18px;">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="table-responsive" style="margin-top: 30px;text-align: center;">
-                        <table class="team-center  animated fadeInRight" style="table-layout: center;border-width: 2px">
-                            <tbody>
-                                <tr>
-                                    <td class="team-image-box">
-                                        <img src="teamimages/4.jpg" class="team-image">
-                                        <div class="team-text">Kishore Kodali</div>
-                                        <div class="team-designation">
-                                            <div>
-                                                Motion Graphics Designer
-                                            </div>
-                                        </div>
-                                        <div style="margin-right:31px">
-                                            <div>
-                                                <div style="float:right;padding:2px;border: solid 2px">
-                                                    <IMG class="static" SRC="socialicons/1hover.jpg" style="width: 18px;height:18px">
-                                                    <IMG class="active" SRC="socialicons/1.jpg" style="width: 18px;height: 18px;">
-                                                </div>
-                                                <div style="float:right;padding:2px;border: solid 2px">
-                                                    <IMG class="static" SRC="socialicons/2hover.jpg" style="width: 18px;height:18px">
-                                                    <IMG class="active" SRC="socialicons/2.jpg" style="width: 18px;height: 18px;">
-                                                </div>
-                                                <div style="float:right;padding:2px;border: solid 2px">
-                                                    <IMG class="static" SRC="socialicons/3hover.jpg" style="width: 18px;height:18px">
-                                                    <IMG class="active" SRC="socialicons/3.jpg" style="width: 18px;height: 18px;">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-
-                                    <td class="team-image-box">
-                                        <img src="teamimages/5.jpg" class="team-image">
-                                        <div class="team-text">Vivek Nekkala</div>
-                                        <div class="team-designation">Cinematographer | Editor</div>
-                                        <div style="margin-right:31px">
-                                            <div>
-                                                <div style="float:right;padding:2px;border: solid 2px">
-                                                    <IMG class="static" SRC="socialicons/1hover.jpg" style="width: 18px;height:18px">
-                                                    <IMG class="active" SRC="socialicons/1.jpg" style="width: 18px;height: 18px;">
-                                                </div>
-                                                <div style="float:right;padding:2px;border: solid 2px">
-                                                    <IMG class="static" SRC="socialicons/2hover.jpg" style="width: 18px;height:18px">
-                                                    <IMG class="active" SRC="socialicons/2.jpg" style="width: 18px;height: 18px;">
-                                                </div>
-                                                <div style="float:right;padding:2px;border: solid 2px">
-                                                    <IMG class="static" SRC="socialicons/3hover.jpg" style="width: 18px;height:18px">
-                                                    <IMG class="active" SRC="socialicons/3.jpg" style="width: 18px;height: 18px;">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-
-
-                                    <td class="team-image-box">
-                                        <img src="teamimages/6.jpg" class="team-image">
-                                        <div class="team-text">Sai Sujatha</div>
-                                        <div class="team-designation">Motion Graphics Designer</div>
-                                        <div style="margin-right:31px">
-                                            <div>
-                                                <div style="float:right;padding:2px;border: solid 2px">
-                                                    <IMG class="static" SRC="socialicons/1hover.jpg" style="width: 18px;height:18px">
-                                                    <IMG class="active" SRC="socialicons/1.jpg" style="width: 18px;height: 18px;">
-                                                </div>
-                                                <div style="float:right;padding:2px;border: solid 2px">
-                                                    <IMG class="static" SRC="socialicons/2hover.jpg" style="width: 18px;height:18px">
-                                                    <IMG class="active" SRC="socialicons/2.jpg" style="width: 18px;height: 18px;">
-                                                </div>
-                                                <div style="float:right;padding:2px;border: solid 2px">
-                                                    <IMG class="static" SRC="socialicons/3hover.jpg" style="width: 18px;height:18px">
-                                                    <IMG class="active" SRC="socialicons/3.jpg" style="width: 18px;height: 18px;">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="team-image-box">
-                                        <img src="teamimages/7.jpg" class="team-image">
-                                        <div class="team-text">Aditya Mangal</div>
-                                        <div class="team-designation">Digital marketing strategist</div>
-                                        <div style="margin-right:31px">
-                                            <div>
-                                                <div style="float:right;padding:2px;border: solid 2px">
-                                                    <IMG class="static" SRC="socialicons/1hover.jpg" style="width: 18px;height:18px">
-                                                    <IMG class="active" SRC="socialicons/1.jpg" style="width: 18px;height: 18px;">
-                                                </div>
-                                                <div style="float:right;padding:2px;border: solid 2px">
-                                                    <IMG class="static" SRC="socialicons/2hover.jpg" style="width: 18px;height:18px">
-                                                    <IMG class="active" SRC="socialicons/2.jpg" style="width: 18px;height: 18px;">
-                                                </div>
-                                                <div style="float:right;padding:2px;border: solid 2px">
-                                                    <IMG class="static" SRC="socialicons/3hover.jpg" style="width: 18px;height:18px">
-                                                    <IMG class="active" SRC="socialicons/3.jpg" style="width: 18px;height: 18px;">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <div id="lab" class="col-lg-12  hidden-sm hidden-md ">
-                    <div class="col-lg-12  hidden-sm hidden-md fadeInRight animated " style="margin-top: 2px;font-size: 15px;text-align: center;">
-                        <font color="#00BFA5"><b>IN-HOUSE PRODUCTION</b></font>
-                    </div>
-                    <div class="col-lg-6 fadeInRight animated " style="margin-top:15px;text-align: center">
-                        <div class="col-lg-12">
-                            <div style="font-size:25px;text-align: center" class="col-lg-12"><b>THE STARTUP VIDEO</b></div>
-                            <iframe width="560" height="260" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </div>
-                        <div>
-                            <p>
-                                The 90 seconds video will change your perception about startups !
-                            </p>
-                            <div class="col-lg-12" style="text-align: left"><span style="color:#00BFA5;font-weight:bold;width:28px;;text-align: left;display:inline-block;text-align:left">608</span><span style="font-weight:bold">Founders</span></div>
-                            <div class="col-lg-12" style="color:gray;font-size:12px;margin-top: -3px;text-align: left;">Watched the video</div>
-                            <div class="col-lg-12" style="text-align: left"><span style="font-weight:bold;width:88px;display:inline-block;text-align: left">VIEWS</span><span style="color:#00BFA5;font-weight:bold"> 65,000+</span></div>
-                            <div class="col-lg-12" style="text-align: left"><span style="font-weight:bold;width:88px;display:inline-block;text-align: left">REACH</span><span style="color:#00BFA5;font-weight:bold">246,630+</span></div>
-                            <div class="col-lg-12" style="text-align: left"><span style="font-weight:bold;width:88px;display:inline-block;text-align: left">SHARES</span><span style="color:#00BFA5;font-weight:bold">958+</span></div>
-                            <div class="col-lg-12" style="text-align: left"><span style="font-weight:bold;width:88px;display:inline-block">REACTIONS</span><span style="color:#00BFA5;font-weight:bold">6,195+</span></div>
-                            <div class="col-lg-12" style="color:gray;margin-top: -3px;margin-bottom:30px;text-align: left">in 3 weeks across the Globe</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 fadeInRight animated " style="margin-top:15px">
-                        <div id="reaction-content-area" style="cursor:pointer" class="col-lg-12">
-                            <b>REACTIONS</b>
-                            <p style="margin-right:15px">
-                                Absolutely nothing else can be so blunt &amp; direct.
-                                <br>time for both investors &amp; wannable Startups t0 look within and decide. You don't become a CEO overnight just because you decided to be a startup.
-                                <br>People look at the success stories of Flipkart but no one seems to be seen standing outside a book store to distribute book marks the way Bansals of FK did.
-                                <br> I totally support the statement made by Anil Chhikara, you are not a CEO if your company is not making revenues.
-                                <br><span style="color:gray;float:right">-Akash Agarwal, Owner Emerecard</span>
-                                <br>
-                                <br>Preamble of start-up comapny... explained !!!
-                                <br>Excellent work Team ToonPandas.
-                                <br><span style="color:gray;float:right">-Gaurav Ranebennur,</span>
-                                <br><span style="color:gray;float:right">Founder &amp; CEO, E Lorre</span>
-                                <br>
-                                <br>"Well said...It's not about making millions. It's about the mindset...Kudos to the tremendous job that you all are doing in providing the great ecosystem to the startups"
-                                <br><span style="color:gray;float:right">-Nidhi Gupta, California</span>
-                                <br>
-                                <br>For all the start-ups enthisiasts out there, if you wanna start, do it after you watch this video... #TheStartupVideo, #ToonPandas...Inspiring video, Nice work bro Harsha Bandaru
-                                <br><span style="color:gray;float:right">-Roehan Rangadurai, MICA</span>
-                                <br><span style="color:gray;float:right">International Photographer</span>
-                                <br>
-                                <br>Short and insightful.. good work Harsha &amp; Team ToonPandas
-                                <br><span style="color:gray;float:right">-Sudha Datta, IIM Rohtak</span>
-                                <br><span style="color:gray;float:right">Coal India Limited</span>
-                                <br>
-                                <br>"Starting Up is not just about the Millions, It's the Mindset!" Well Said..
-                                <br><span style="color:red;float:right">-NSRCEL, IIM Bangalore</span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div id="contact" class="col-lg-12  hidden-sm hidden-md  fadeInLeft animated ">
-                    <div class="col-lg-12  hidden-sm hidden-md " style="margin-top: 2px;font-size: 15px;text-align: center;">
-                        <font color="#00BFA5"><b>LET'S TALK !</b></font>
-                    </div>
-                    <div class="row" style="margin-top:55px">
-                        <div class="col-lg-4 col-lg-offset-2">  <input placeholder="Your Name (required)" style="width:100% !important;padding-left:5px;padding-right:5px"></div>
-                        <div class="col-lg-4">   <input placeholder="Your E-Mail (required)" style="width:100% !important;padding-left:5px;padding-right:5px"></div>
-                    </div>
-                    <div class="row" style="margin-top:25px">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <textarea rows="3" placeholder="Your Message" style="width:100% !important;padding:5px"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="row" style="margin-top:35px;text-align:center"><button class="btn btn-primary btn-sm btn-get-in-touch" style="font-weight:bold">GET IN TOUCH</button></div>
-
-                    <div class="row" style="text-align:center;margin-top:50px">
-                        <div class="col-lg-4 col-lg-offset-2" style="font-size:25px;font-weight:bold">JayaNagar, Bengaluru</div>
-                        <div class="col-lg-4" style="font-size:25px;font-weight:bold">+91 973 901 0612</div>
-                    </div>
-                    <div class="row" style="text-align:center">
-                        <div class="col-lg-12" style="font-size:25px;font-weight:bold;margin-top:25px;text-align:center">
-                            <div style="margin-right:45%">
-                                <div style="float:right;padding:2px;border: solid 2px;margin:2px">
-                                    <IMG class="static" SRC="socialicons/1hover.jpg" style="width: 18px;height:18px">
-                                    <IMG class="active" SRC="socialicons/1.jpg" style="width: 18px;height: 18px;">
-                                </div>
-                                <div style="float:right;padding:2px;border: solid 2px;margin:2px">
-                                    <IMG class="static" SRC="socialicons/2hover.jpg" style="width: 18px;height:18px">
-                                    <IMG class="active" SRC="socialicons/2.jpg" style="width: 18px;height: 18px;">
-                                </div>
-                                <div style="float:right;padding:2px;border: solid 2px;margin:2px">
-                                    <IMG class="static" SRC="socialicons/3hover.jpg" style="width: 18px;height:18px">
-                                    <IMG class="active" SRC="socialicons/3.jpg" style="width: 18px;height: 18px;">
-                                </div>
-                                <div style="float:right;padding:2px;border: solid 2px;margin:2px">
-                                    <IMG class="static" SRC="socialicons/4hover.jpg" style="width: 18px;height:18px">
-                                    <IMG class="active" SRC="socialicons/4.jpg" style="width: 18px;height: 18px;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <script type="text/javascript">
-
-
-
-                    $('.carousel[data-type="multi"] .item').each(function () {
-                        var next = $(this).next();
-                        if (!next.length) {
-                            next = $(this).siblings(':first');
-                        }
-                        next.children(':first-child').clone().appendTo($(this));
-
-                        for (var i = 0; i < 4; i++) {
-                            next = next.next();
-                            if (!next.length) {
-                                next = $(this).siblings(':first');
-                            }
-
-                            next.children(':first-child').clone().appendTo($(this));
-                        }
-                    });
-
-
-                    $('.carousellll[data-type="multi"] .item').each(function () {
-                        var next = $(this).next();
-                        if (!next.length) {
-                            next = $(this).siblings(':first');
-                        }
-                        next.children(':first-child').clone().appendTo($(this));
-
-                        for (var i = 0; i < 3; i++) {
-                            next = next.next();
-                            if (!next.length) {
-                                next = $(this).siblings(':first');
-                            }
-
-                            next.children(':first-child').clone().appendTo($(this));
-                        }
-                    });
-
-                    $('#contact').hide();
-                    $('#services').hide();
-
-                    $('#lab').hide();
-                    $('#team').hide();
-                    $('#protfolio').hide();
-                    $('#homepage').hide();
-                        $('#homepagebase').hide();
-                    function myFunctionhomess() {
-                        $('#homepage').show();
-                        $('#homepagebase').show();
-                        $('#contact').hide();
-                        $('#services').hide();
-                        $('#lab').hide();
-                        $('#team').hide();
-                        $('#protfolio').hide();
-
-                        var img = document.getElementById('aboutimage');
-                        img.style.visibility = 'hidden ';
-
-                        var img = document.getElementById('portimage');
-                        img.style.visibility = 'visible';
-
-                        var img = document.getElementById('servicepage');
-                        img.style.visibility = 'visible';
-                        var img = document.getElementById('teampage');
-                        img.style.visibility = 'visible';
-                        var img = document.getElementById('labpage');
-                        img.style.visibility = 'visible';
-                        var img = document.getElementById('contactpage');
-                        img.style.visibility = 'visible';
-
-
-
-                    }
-
-
-                    function myFunctionportfolio() {
-                        $('#homepage').hide();
-                        $('#homepagebase').hide();
-                        $('#contact').hide();
-                        $('#services').hide();
-                        $('#lab').hide();
-                        $('#team').hide();
-                        $('#protfolio').show();
-
-                        var img = document.getElementById('aboutimage');
-                        img.style.visibility = 'visible ';
-
-                        var img = document.getElementById('portimage');
-                        img.style.visibility = 'hidden';
-                        var img = document.getElementById('servicepage');
-                        img.style.visibility = 'visible';
-                        var img = document.getElementById('teampage');
-                        img.style.visibility = 'visible';
-                        var img = document.getElementById('labpage');
-                        img.style.visibility = 'visible';
-                        var img = document.getElementById('contactpage');
-                        img.style.visibility = 'visible';
-
-
-                    }
-
-
-
-                    function myFunctionservices() {
-                        $('#homepage').hide();
-                        $('#homepagebase').hide();
-                        $('#contact').hide();
-                        $('#services').show();
-                        $('#lab').hide();
-                        $('#team').hide();
-                        $('#protfolio').hide();
-
-                        var img = document.getElementById('aboutimage');
-                        img.style.visibility = 'visible ';
-
-                        var img = document.getElementById('portimage');
-                        img.style.visibility = 'visible';
-                        var img = document.getElementById('servicepage');
-                        img.style.visibility = 'hidden';
-                        var img = document.getElementById('teampage');
-                        img.style.visibility = 'visible';
-                        var img = document.getElementById('labpage');
-                        img.style.visibility = 'visible';
-                        var img = document.getElementById('contactpage');
-                        img.style.visibility = 'visible';
-
-
-                    }
-
-                    function teamClick() {
-                        $('#homepage').hide();
-                        $('#homepagebase').hide();
-                        $('#contact').hide();
-                        $('#services').hide();
-                        $('#lab').hide();
-                        $('#team').show();
-                        $('#protfolio').hide();
-
-                        var img = document.getElementById('aboutimage');
-                        img.style.visibility = 'visible ';
-
-                        var img = document.getElementById('portimage');
-                        img.style.visibility = 'visible';
-
-                        var img = document.getElementById('servicepage');
-                        img.style.visibility = 'visible';
-                        var img = document.getElementById('teampage');
-                        img.style.visibility = 'hidden';
-                        var img = document.getElementById('labpage');
-                        img.style.visibility = 'visible';
-                        var img = document.getElementById('contactpage');
-                        img.style.visibility = 'visible';
-                    }
-
-
-                    function labClick() {
-                        $('#homepage').hide();
-                        $('#homepagebase').hide();
-                        $('#contact').hide();
-                        $('#services').hide();
-                        $('#lab').show();
-                        $('#team').hide();
-                        $('#protfolio').hide();
-
-                        var img = document.getElementById('aboutimage');
-                        img.style.visibility = 'visible ';
-
-                        var img = document.getElementById('portimage');
-                        img.style.visibility = 'visible';
-
-                        var img = document.getElementById('servicepage');
-                        img.style.visibility = 'visible';
-                        var img = document.getElementById('teampage');
-                        img.style.visibility = 'visible';
-                        var img = document.getElementById('labpage');
-                        img.style.visibility = 'hidden';
-                        var img = document.getElementById('contactpage');
-                        img.style.visibility = 'visible';
-                    }
-
-                    function contactClick() {
-                        $('#homepage').hide();
-                        $('#homepagebase').hide();
-                        $('#contact').show();
-                        $('#services').hide();
-                        $('#lab').hide();
-                        $('#team').hide();
-                        $('#protfolio').hide();
-                        var img = document.getElementById('aboutimage');
-                        img.style.visibility = 'visible ';
-
-                        var img = document.getElementById('portimage');
-                        img.style.visibility = 'visible';
-
-                        var img = document.getElementById('servicepage');
-                        img.style.visibility = 'visible';
-                        var img = document.getElementById('teampage');
-                        img.style.visibility = 'visible';
-                        var img = document.getElementById('labpage');
-                        img.style.visibility = 'visible';
-                        var img = document.getElementById('contactpage');
-                        img.style.visibility = 'hidden';
-                    }
-
-                    function myFunctionhome() {
-                        
-                        var img = document.getElementById('aboutimage');
-                        img.style.visibility = 'hidden';
-
-                        var img = document.getElementById('portimage');
-                        img.style.visibility = 'hidden';
-
-                        var img = document.getElementById('servicepage');
-                        img.style.visibility = 'hidden';
-                        var img = document.getElementById('teampage');
-                        img.style.visibility = 'hidden';
-                        var img = document.getElementById('labpage');
-                        img.style.visibility = 'hidden';
-                        var img = document.getElementById('contactpage');
-                        img.style.visibility = 'hidden';
-
-
-                        $('#pandaloader').css('visibility', 'visible');
-                        $('#bodydiv').css('visibility', 'hidden');
-
-
-      $('#loading').css('visibility', 'visible');
-      $("#pandaloader").load("images/toon.gif");
-      $('#menubar').css('visibility', 'hidden');
-                          e1 = $('#pandaloader');
-      
-      e1.slideDown( "fast", function() {
-  // Animation complete.
-  document.getElementById("pandaloader").src = "images/toon.gif";
-  $('#bodydiv').css('visibility', 'hidden');
-  
-  
-      $('#loading').css('visibility', 'visible');
-
-});;
-     
-
-                    }
-
-                    var query = window.location.search.substring(1);
-                    var vars = query.split("&");
-                    for (var i = 0; i < vars.length; i++) {
-                        var pair = vars[i].split("=");
-                        if (pair[0] == "homeeepaage") {
-                            var img = document.getElementById('aboutimage');
-                            img.style.visibility = 'hidden';
-                        }
-                    }
-
-                    // $('#reaction-content-area').perfectScrollbar();
-
-                    $(function () {
-                        $('#reaction-content-area').slimScroll({
-                            height: '453px',
-                            width: '100%',
-                            railVisible: true,
-                            alwaysVisible: true
-                        });
-                    });
-
-                </script>
+        <div id="team" class="col-lg-12  hidden-sm hidden-md fadeInDown animated  ">
+            <div class="col-lg-12  hidden-sm hidden-md fadeIn animated" style="margin-top: 2px;font-size: 15px;text-align: center;">
+                <font color="#00BFA5">
+                    <b>THE PASSIONATE PANDAS</b>
+                </font>
             </div>
+            <div class="table-responsive" style="margin-top: 30px;text-align: center;">
+                <table class="team-center  animated fadeInRight" style="table-layout: center;border-width: 2px">
+                    <tbody>
+                        <tr>
+                            <td class="team-image-box">
+                                <img src="teamimages/1.jpg" class="team-image">
+                                <div class="team-text">Harsha Bandaru</div>
+                                <div class="team-designation">
+                                    <div>
+                                        Founder | Creative Director
+                                    </div>
+                                </div>
+                                <div style="margin-right:31px">
+                                    <div>
+                                        <div style="float:right;padding:2px;border: solid 2px">
+                                            <IMG class="static" SRC="socialicons/1hover.jpg" style="width: 18px;height:18px">
+                                            <IMG class="active" SRC="socialicons/1.jpg" style="width: 18px;height: 18px;">
+                                        </div>
+                                        <div style="float:right;padding:2px;border: solid 2px">
+                                            <IMG class="static" SRC="socialicons/2hover.jpg" style="width: 18px;height:18px">
+                                            <IMG class="active" SRC="socialicons/2.jpg" style="width: 18px;height: 18px;">
+                                        </div>
+                                        <div style="float:right;padding:2px;border: solid 2px">
+                                            <IMG class="static" SRC="socialicons/3hover.jpg" style="width: 18px;height:18px">
+                                            <IMG class="active" SRC="socialicons/3.jpg" style="width: 18px;height: 18px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td class="team-image-box">
+                                <img src="teamimages/2.jpg" class="team-image">
+                                <div class="team-text">Vanitha Gaja</div>
+                                <div class="team-designation">Chief Ideation Director</div>
+                                <div style="margin-right:31px">
+                                    <div>
+                                        <div style="float:right;padding:2px;border: solid 2px">
+                                            <IMG class="static" SRC="socialicons/1hover.jpg" style="width: 18px;height:18px">
+                                            <IMG class="active" SRC="socialicons/1.jpg" style="width: 18px;height: 18px;">
+                                        </div>
+                                        <div style="float:right;padding:2px;border: solid 2px">
+                                            <IMG class="static" SRC="socialicons/2hover.jpg" style="width: 18px;height:18px">
+                                            <IMG class="active" SRC="socialicons/2.jpg" style="width: 18px;height: 18px;">
+                                        </div>
+                                        <div style="float:right;padding:2px;border: solid 2px">
+                                            <IMG class="static" SRC="socialicons/3hover.jpg" style="width: 18px;height:18px">
+                                            <IMG class="active" SRC="socialicons/3.jpg" style="width: 18px;height: 18px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="team-image-box">
+                                <img src="teamimages/3.jpg" class="team-image">
+                                <div class="team-text">Aakarsh Naidu</div>
+                                <div class="team-designation">Mentor</div>
+                                <div style="margin-right:31px">
+                                    <div>
+                                        <div style="float:right;padding:2px;border: solid 2px">
+                                            <IMG class="static" SRC="socialicons/1hover.jpg" style="width: 18px;height:18px">
+                                            <IMG class="active" SRC="socialicons/1.jpg" style="width: 18px;height: 18px;">
+                                        </div>
+                                        <div style="float:right;padding:2px;border: solid 2px">
+                                            <IMG class="static" SRC="socialicons/2hover.jpg" style="width: 18px;height:18px">
+                                            <IMG class="active" SRC="socialicons/2.jpg" style="width: 18px;height: 18px;">
+                                        </div>
+                                        <div style="float:right;padding:2px;border: solid 2px">
+                                            <IMG class="static" SRC="socialicons/3hover.jpg" style="width: 18px;height:18px">
+                                            <IMG class="active" SRC="socialicons/3.jpg" style="width: 18px;height: 18px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-responsive" style="margin-top: 30px;text-align: center;">
+                <table class="team-center  animated fadeInRight" style="table-layout: center;border-width: 2px">
+                    <tbody>
+                        <tr>
+                            <td class="team-image-box">
+                                <img src="teamimages/4.jpg" class="team-image">
+                                <div class="team-text">Kishore Kodali</div>
+                                <div class="team-designation">
+                                    <div>
+                                        Motion Graphics Designer
+                                    </div>
+                                </div>
+                                <div style="margin-right:31px">
+                                    <div>
+                                        <div style="float:right;padding:2px;border: solid 2px">
+                                            <IMG class="static" SRC="socialicons/1hover.jpg" style="width: 18px;height:18px">
+                                            <IMG class="active" SRC="socialicons/1.jpg" style="width: 18px;height: 18px;">
+                                        </div>
+                                        <div style="float:right;padding:2px;border: solid 2px">
+                                            <IMG class="static" SRC="socialicons/2hover.jpg" style="width: 18px;height:18px">
+                                            <IMG class="active" SRC="socialicons/2.jpg" style="width: 18px;height: 18px;">
+                                        </div>
+                                        <div style="float:right;padding:2px;border: solid 2px">
+                                            <IMG class="static" SRC="socialicons/3hover.jpg" style="width: 18px;height:18px">
+                                            <IMG class="active" SRC="socialicons/3.jpg" style="width: 18px;height: 18px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td class="team-image-box">
+                                <img src="teamimages/5.jpg" class="team-image">
+                                <div class="team-text">Vivek Nekkala</div>
+                                <div class="team-designation">Cinematographer | Editor</div>
+                                <div style="margin-right:31px">
+                                    <div>
+                                        <div style="float:right;padding:2px;border: solid 2px">
+                                            <IMG class="static" SRC="socialicons/1hover.jpg" style="width: 18px;height:18px">
+                                            <IMG class="active" SRC="socialicons/1.jpg" style="width: 18px;height: 18px;">
+                                        </div>
+                                        <div style="float:right;padding:2px;border: solid 2px">
+                                            <IMG class="static" SRC="socialicons/2hover.jpg" style="width: 18px;height:18px">
+                                            <IMG class="active" SRC="socialicons/2.jpg" style="width: 18px;height: 18px;">
+                                        </div>
+                                        <div style="float:right;padding:2px;border: solid 2px">
+                                            <IMG class="static" SRC="socialicons/3hover.jpg" style="width: 18px;height:18px">
+                                            <IMG class="active" SRC="socialicons/3.jpg" style="width: 18px;height: 18px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+
+
+                            <td class="team-image-box">
+                                <img src="teamimages/6.jpg" class="team-image">
+                                <div class="team-text">Sai Sujatha</div>
+                                <div class="team-designation">Motion Graphics Designer</div>
+                                <div style="margin-right:31px">
+                                    <div>
+                                        <div style="float:right;padding:2px;border: solid 2px">
+                                            <IMG class="static" SRC="socialicons/1hover.jpg" style="width: 18px;height:18px">
+                                            <IMG class="active" SRC="socialicons/1.jpg" style="width: 18px;height: 18px;">
+                                        </div>
+                                        <div style="float:right;padding:2px;border: solid 2px">
+                                            <IMG class="static" SRC="socialicons/2hover.jpg" style="width: 18px;height:18px">
+                                            <IMG class="active" SRC="socialicons/2.jpg" style="width: 18px;height: 18px;">
+                                        </div>
+                                        <div style="float:right;padding:2px;border: solid 2px">
+                                            <IMG class="static" SRC="socialicons/3hover.jpg" style="width: 18px;height:18px">
+                                            <IMG class="active" SRC="socialicons/3.jpg" style="width: 18px;height: 18px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="team-image-box">
+                                <img src="teamimages/7.jpg" class="team-image">
+                                <div class="team-text">Aditya Mangal</div>
+                                <div class="team-designation">Digital marketing strategist</div>
+                                <div style="margin-right:31px">
+                                    <div>
+                                        <div style="float:right;padding:2px;border: solid 2px">
+                                            <IMG class="static" SRC="socialicons/1hover.jpg" style="width: 18px;height:18px">
+                                            <IMG class="active" SRC="socialicons/1.jpg" style="width: 18px;height: 18px;">
+                                        </div>
+                                        <div style="float:right;padding:2px;border: solid 2px">
+                                            <IMG class="static" SRC="socialicons/2hover.jpg" style="width: 18px;height:18px">
+                                            <IMG class="active" SRC="socialicons/2.jpg" style="width: 18px;height: 18px;">
+                                        </div>
+                                        <div style="float:right;padding:2px;border: solid 2px">
+                                            <IMG class="static" SRC="socialicons/3hover.jpg" style="width: 18px;height:18px">
+                                            <IMG class="active" SRC="socialicons/3.jpg" style="width: 18px;height: 18px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="lab" class="col-lg-12  hidden-sm hidden-md ">
+            <div class="col-lg-12  hidden-sm hidden-md fadeInRight animated " style="margin-top: 2px;font-size: 15px;text-align: center;">
+                <font color="#00BFA5">
+                    <b>IN-HOUSE PRODUCTION</b>
+                </font>
+            </div>
+            <div class="col-lg-6 fadeInRight animated " style="margin-top:15px;text-align: center">
+                <div class="col-lg-12">
+                    <div style="font-size:25px;text-align: center" class="col-lg-12">
+                        <b>THE STARTUP VIDEO</b>
+                    </div>
+                    <iframe width="560" height="260" src="https://www.youtube.com/embed/7_sNBaFZWYw" frameborder="0" allow="autoplay; encrypted-media"
+                        allowfullscreen></iframe>
+                </div>
+                <div>
+                    <p>
+                        The 90 seconds video will change your perception about startups !
+                    </p>
+                    <div class="col-lg-12" style="text-align: left">
+                        <span style="color:#00BFA5;font-weight:bold;width:28px;;text-align: left;display:inline-block;text-align:left">608</span>
+                        <span style="font-weight:bold">Founders</span>
+                    </div>
+                    <div class="col-lg-12" style="color:gray;font-size:12px;margin-top: -3px;text-align: left;">Watched the video</div>
+                    <div class="col-lg-12" style="text-align: left">
+                        <span style="font-weight:bold;width:88px;display:inline-block;text-align: left">VIEWS</span>
+                        <span style="color:#00BFA5;font-weight:bold"> 65,000+</span>
+                    </div>
+                    <div class="col-lg-12" style="text-align: left">
+                        <span style="font-weight:bold;width:88px;display:inline-block;text-align: left">REACH</span>
+                        <span style="color:#00BFA5;font-weight:bold">246,630+</span>
+                    </div>
+                    <div class="col-lg-12" style="text-align: left">
+                        <span style="font-weight:bold;width:88px;display:inline-block;text-align: left">SHARES</span>
+                        <span style="color:#00BFA5;font-weight:bold">958+</span>
+                    </div>
+                    <div class="col-lg-12" style="text-align: left">
+                        <span style="font-weight:bold;width:88px;display:inline-block">REACTIONS</span>
+                        <span style="color:#00BFA5;font-weight:bold">6,195+</span>
+                    </div>
+                    <div class="col-lg-12" style="color:gray;margin-top: -3px;margin-bottom:30px;text-align: left">in 3 weeks across the Globe</div>
+                </div>
+            </div>
+            <div class="col-lg-6 fadeInRight animated " style="margin-top:15px">
+                <div id="reaction-content-area" style="cursor:pointer" class="col-lg-12">
+                    <b>REACTIONS</b>
+                    <p style="margin-right:15px">
+                        Absolutely nothing else can be so blunt &amp; direct.
+                        <br>time for both investors &amp; wannable Startups t0 look within and decide. You don't become a CEO
+                        overnight just because you decided to be a startup.
+                        <br>People look at the success stories of Flipkart but no one seems to be seen standing outside a book
+                        store to distribute book marks the way Bansals of FK did.
+                        <br> I totally support the statement made by Anil Chhikara, you are not a CEO if your company is not
+                        making revenues.
+                        <br>
+                        <span style="color:gray;float:right">-Akash Agarwal, Owner Emerecard</span>
+                        <br>
+                        <br>Preamble of start-up comapny... explained !!!
+                        <br>Excellent work Team ToonPandas.
+                        <br>
+                        <span style="color:gray;float:right">-Gaurav Ranebennur,</span>
+                        <br>
+                        <span style="color:gray;float:right">Founder &amp; CEO, E Lorre</span>
+                        <br>
+                        <br>"Well said...It's not about making millions. It's about the mindset...Kudos to the tremendous job
+                        that you all are doing in providing the great ecosystem to the startups"
+                        <br>
+                        <span style="color:gray;float:right">-Nidhi Gupta, California</span>
+                        <br>
+                        <br>For all the start-ups enthisiasts out there, if you wanna start, do it after you watch this video...
+                        #TheStartupVideo, #ToonPandas...Inspiring video, Nice work bro Harsha Bandaru
+                        <br>
+                        <span style="color:gray;float:right">-Roehan Rangadurai, MICA</span>
+                        <br>
+                        <span style="color:gray;float:right">International Photographer</span>
+                        <br>
+                        <br>Short and insightful.. good work Harsha &amp; Team ToonPandas
+                        <br>
+                        <span style="color:gray;float:right">-Sudha Datta, IIM Rohtak</span>
+                        <br>
+                        <span style="color:gray;float:right">Coal India Limited</span>
+                        <br>
+                        <br>"Starting Up is not just about the Millions, It's the Mindset!" Well Said..
+                        <br>
+                        <span style="color:red;float:right">-NSRCEL, IIM Bangalore</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="contact" class="col-lg-12  hidden-sm hidden-md  fadeInLeft animated ">
+            <div class="col-lg-12  hidden-sm hidden-md " style="margin-top: 2px;font-size: 15px;text-align: center;">
+                <font color="#00BFA5">
+                    <b>LET'S TALK !</b>
+                </font>
+            </div>
+            <div class="row" style="margin-top:55px">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <input placeholder="Your Name (required)" style="width:100% !important;padding-left:5px;padding-right:5px">
+                </div>
+                <div class="col-lg-4">
+                    <input placeholder="Your E-Mail (required)" style="width:100% !important;padding-left:5px;padding-right:5px">
+                </div>
+            </div>
+            <div class="row" style="margin-top:25px">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <textarea rows="3" placeholder="Your Message" style="width:100% !important;padding:5px"></textarea>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top:35px;text-align:center">
+                <button class="btn btn-primary btn-sm btn-get-in-touch" style="font-weight:bold">GET IN TOUCH</button>
+            </div>
+
+            <div class="row" style="text-align:center;margin-top:50px">
+                <div class="col-lg-4 col-lg-offset-2" style="font-size:25px;font-weight:bold">JayaNagar, Bengaluru</div>
+                <div class="col-lg-4" style="font-size:25px;font-weight:bold">+91 973 901 0612</div>
+            </div>
+            <div class="row" style="text-align:center">
+                <div class="col-lg-12" style="font-size:25px;font-weight:bold;margin-top:25px;text-align:center">
+                    <div style="margin-right:45%">
+                        <div style="float:right;padding:2px;border: solid 2px;margin:2px">
+                            <IMG class="static" SRC="socialicons/1hover.jpg" style="width: 18px;height:18px">
+                            <IMG class="active" SRC="socialicons/1.jpg" style="width: 18px;height: 18px;">
+                        </div>
+                        <div style="float:right;padding:2px;border: solid 2px;margin:2px">
+                            <IMG class="static" SRC="socialicons/2hover.jpg" style="width: 18px;height:18px">
+                            <IMG class="active" SRC="socialicons/2.jpg" style="width: 18px;height: 18px;">
+                        </div>
+                        <div style="float:right;padding:2px;border: solid 2px;margin:2px">
+                            <IMG class="static" SRC="socialicons/3hover.jpg" style="width: 18px;height:18px">
+                            <IMG class="active" SRC="socialicons/3.jpg" style="width: 18px;height: 18px;">
+                        </div>
+                        <div style="float:right;padding:2px;border: solid 2px;margin:2px">
+                            <IMG class="static" SRC="socialicons/4hover.jpg" style="width: 18px;height:18px">
+                            <IMG class="active" SRC="socialicons/4.jpg" style="width: 18px;height: 18px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+
+
+
+            $('.carousel[data-type="multi"] .item').each(function () {
+                var next = $(this).next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+                next.children(':first-child').clone().appendTo($(this));
+
+                for (var i = 0; i < 4; i++) {
+                    next = next.next();
+                    if (!next.length) {
+                        next = $(this).siblings(':first');
+                    }
+
+                    next.children(':first-child').clone().appendTo($(this));
+                }
+            });
+
+
+            $('.carousellll[data-type="multi"] .item').each(function () {
+                var next = $(this).next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+                next.children(':first-child').clone().appendTo($(this));
+
+                for (var i = 0; i < 3; i++) {
+                    next = next.next();
+                    if (!next.length) {
+                        next = $(this).siblings(':first');
+                    }
+
+                    next.children(':first-child').clone().appendTo($(this));
+                }
+            });
+
+            $('#contact').hide();
+            $('#services').hide();
+
+            $('#lab').hide();
+            $('#team').hide();
+            $('#protfolio').hide();
+            $('#homepage').hide();
+            $('#homepagebase').hide();
+            function myFunctionhomess() {
+                $('#homepage').show();
+                $('#homepagebase').show();
+                $('#contact').hide();
+                $('#services').hide();
+                $('#lab').hide();
+                $('#team').hide();
+                $('#protfolio').hide();
+
+                var img = document.getElementById('aboutimage');
+                img.style.visibility = 'hidden ';
+
+                var img = document.getElementById('portimage');
+                img.style.visibility = 'visible';
+
+                var img = document.getElementById('servicepage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('teampage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('labpage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('contactpage');
+                img.style.visibility = 'visible';
+
+
+
+            }
+
+
+            function myFunctionportfolio() {
+                $('#homepage').hide();
+                $('#homepagebase').hide();
+                $('#contact').hide();
+                $('#services').hide();
+                $('#lab').hide();
+                $('#team').hide();
+                $('#protfolio').show();
+
+                var img = document.getElementById('aboutimage');
+                img.style.visibility = 'visible ';
+
+                var img = document.getElementById('portimage');
+                img.style.visibility = 'hidden';
+                var img = document.getElementById('servicepage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('teampage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('labpage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('contactpage');
+                img.style.visibility = 'visible';
+
+
+            }
+
+
+
+            function myFunctionservices() {
+                $('#homepage').hide();
+                $('#homepagebase').hide();
+                $('#contact').hide();
+                $('#services').show();
+                $('#lab').hide();
+                $('#team').hide();
+                $('#protfolio').hide();
+
+                var img = document.getElementById('aboutimage');
+                img.style.visibility = 'visible ';
+
+                var img = document.getElementById('portimage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('servicepage');
+                img.style.visibility = 'hidden';
+                var img = document.getElementById('teampage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('labpage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('contactpage');
+                img.style.visibility = 'visible';
+
+
+            }
+
+            function teamClick() {
+                $('#homepage').hide();
+                $('#homepagebase').hide();
+                $('#contact').hide();
+                $('#services').hide();
+                $('#lab').hide();
+                $('#team').show();
+                $('#protfolio').hide();
+
+                var img = document.getElementById('aboutimage');
+                img.style.visibility = 'visible ';
+
+                var img = document.getElementById('portimage');
+                img.style.visibility = 'visible';
+
+                var img = document.getElementById('servicepage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('teampage');
+                img.style.visibility = 'hidden';
+                var img = document.getElementById('labpage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('contactpage');
+                img.style.visibility = 'visible';
+            }
+
+
+            function labClick() {
+                $('#homepage').hide();
+                $('#homepagebase').hide();
+                $('#contact').hide();
+                $('#services').hide();
+                $('#lab').show();
+                $('#team').hide();
+                $('#protfolio').hide();
+
+                var img = document.getElementById('aboutimage');
+                img.style.visibility = 'visible ';
+
+                var img = document.getElementById('portimage');
+                img.style.visibility = 'visible';
+
+                var img = document.getElementById('servicepage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('teampage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('labpage');
+                img.style.visibility = 'hidden';
+                var img = document.getElementById('contactpage');
+                img.style.visibility = 'visible';
+            }
+
+            function contactClick() {
+                $('#homepage').hide();
+                $('#homepagebase').hide();
+                $('#contact').show();
+                $('#services').hide();
+                $('#lab').hide();
+                $('#team').hide();
+                $('#protfolio').hide();
+                var img = document.getElementById('aboutimage');
+                img.style.visibility = 'visible ';
+
+                var img = document.getElementById('portimage');
+                img.style.visibility = 'visible';
+
+                var img = document.getElementById('servicepage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('teampage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('labpage');
+                img.style.visibility = 'visible';
+                var img = document.getElementById('contactpage');
+                img.style.visibility = 'hidden';
+            }
+
+            function myFunctionhome() {
+
+                var img = document.getElementById('aboutimage');
+                img.style.visibility = 'hidden';
+
+                var img = document.getElementById('portimage');
+                img.style.visibility = 'hidden';
+
+                var img = document.getElementById('servicepage');
+                img.style.visibility = 'hidden';
+                var img = document.getElementById('teampage');
+                img.style.visibility = 'hidden';
+                var img = document.getElementById('labpage');
+                img.style.visibility = 'hidden';
+                var img = document.getElementById('contactpage');
+                img.style.visibility = 'hidden';
+
+
+                $('#pandaloader').css('visibility', 'visible');
+                $('#bodydiv').css('visibility', 'hidden');
+
+
+                $('#loading').css('visibility', 'visible');
+                $("#pandaloader").load("images/toon.gif");
+                $('#menubar').css('visibility', 'hidden');
+                e1 = $('#pandaloader');
+
+                e1.slideDown("fast", function () {
+                    // Animation complete.
+                    document.getElementById("pandaloader").src = "images/toon.gif";
+                    $('#bodydiv').css('visibility', 'hidden');
+
+
+                    $('#loading').css('visibility', 'visible');
+
+                });;
+
+
+            }
+
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split("=");
+                if (pair[0] == "homeeepaage") {
+                    var img = document.getElementById('aboutimage');
+                    img.style.visibility = 'hidden';
+                }
+            }
+
+            // $('#reaction-content-area').perfectScrollbar();
+
+            $(function () {
+                $('#reaction-content-area').slimScroll({
+                    height: '453px',
+                    width: '100%',
+                    railVisible: true,
+                    alwaysVisible: true
+                });
+            });
+
+        </script>
+    </div>
 </body>
 
-      
+
 <script>
+     $('#pandaloader').addClass('hidden-xs');
+     $('#pandaloader').addClass('hidden-sm');
+     $('#pandaloader').addClass('hidden-md');
+    
     $('#bodydiv').css('visibility', 'hidden');
     $('#loading').css('visibility', 'visible');
     function myFunction() {
-        
-        e1 = $('#pandaloader');
-      
-        $('#menubar').css('visibility', 'hidden');
-        e1.slideUp( "fast", function() {
-    // Animation complete.
-    $('#bodydiv').css('visibility', 'visible');
-        $('#loading').css('visibility', 'hidden');
-        $('#menubar').css('visibility', 'visible');
-        myFunctionhomess();
 
-  });;
-       
-        
+        e1 = $('#pandaloader');
+
+        $('#menubar').css('visibility', 'hidden');
+        e1.slideUp("fast", function () {
+            // Animation complete.
+            $('#bodydiv').css('visibility', 'visible');
+            $('#loading').css('visibility', 'hidden');
+            $('#menubar').css('visibility', 'visible');
+            myFunctionhomess();
+
+        });;
+
+
     }
 </script>
 
